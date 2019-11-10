@@ -1,4 +1,4 @@
-`npm install --save-dev browser-sync gulp gulp-autoprefixer gulp-clean gulp-clean-css gulp-concat gulp-imagemin gulp-notify gulp-order gulp-rename gulp-rigger gulp-sass gulp-sourcemaps gulp-uglify gulp.spritesmith imagemin-pngquant`
+`npm install --save-dev browser-sync gulp gulp-autoprefixer gulp-clean gulp-clean-css gulp-concat gulp-imagemin gulp-notify gulp-order gulp-rename gulp-file-include gulp-sass gulp-sourcemaps gulp-uglify gulp.spritesmith imagemin-pngquant`
 
 * browser-sync
 * gulp
@@ -10,7 +10,7 @@
 * gulp-notify
 * gulp-order
 * gulp-rename
-* gulp-rigger
+* gulp-file-include
 * gulp-sass
 * gulp-sourcemaps
 * gulp-uglify

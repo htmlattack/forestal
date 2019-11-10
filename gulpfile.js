@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload,
 	notify = require("gulp-notify"),
-	rigger = require('gulp-rigger');
+	fileinclude = require('gulp-file-include');
 //===========================================
 var buidPath = 'build/',
 	path = {
@@ -78,7 +78,7 @@ gulp.task('webServer', function () {
 // ===========================================
 gulp.task('html:build', function () {
 	gulp.src(path.build.htmlRigger)
-		.pipe(rigger())
+		.pipe(fileinclude())
 		.pipe(gulp.dest(path.build.home))
 		.pipe(reload({stream: true}));
 });
