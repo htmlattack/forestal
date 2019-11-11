@@ -1,0 +1,116 @@
+.main-application {
+  padding: 110px 0 220px 0;
+
+  &__heading {
+    margin: 0 0 75px 0;
+
+    h2 {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      color: $dark;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 24px;
+      color: $green;
+    }
+  }
+
+  &__text {
+    margin: 0 0 170px 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 105%;
+      color: $dark;
+    }
+  }
+
+  &__in {
+    display: flex;
+  }
+
+  &__features {
+		width: 50%;
+		padding: 25px 0 0 0;
+
+    ul {
+      li {
+				&:not(:last-child) {
+					margin-bottom: 4px;
+				}
+
+        font-weight: bold;
+				font-size: 60px;
+				color: $dark;
+        text-align: right;
+      }
+    }
+  }
+
+  &__phone {
+		width: 50%;
+		padding-left: 13%;
+
+		box-sizing: border-box;
+		
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin: 0 0 95px 0;
+		}
+	}
+	
+	&__download {
+		&--ap {
+			a {
+				width: 139px;
+				height: 30px;
+
+				background: url(../images/icons/appstore-g.png) no-repeat;
+				background-size: 100% auto;
+			}
+		}
+
+		&--gp {
+			a {
+				width: 151px;
+				height: 30px;
+
+				background: url(../images/icons/googleplay-g.png) 0 3px no-repeat;
+				background-size: 100% auto;
+			}
+		}
+
+		ul {
+			display: flex;
+			justify-content: center;
+
+			li {
+				&:not(:last-child) {
+					margin-right: 45px;
+				}
+
+				a {
+					display: block;
+					text-decoration: none;
+
+					text-indent: -9999px;
+
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}

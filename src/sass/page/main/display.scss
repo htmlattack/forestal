@@ -1,0 +1,161 @@
+.main-display {
+	padding: 195px 0 0 0;
+	
+	background: url(../images/main/bg-display.jpg) center top no-repeat;
+	background-size: 100% auto;
+
+  &__heading {
+    margin: 0 0 75px 0;
+
+    h2 {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      color: $dark;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 24px;
+      color: $green;
+    }
+  }
+
+  &__text {
+    margin: 0 0 170px 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 105%;
+      color: $dark;
+    }
+  }
+
+  &__in {
+		display: flex;
+		justify-content: flex-end;
+
+		padding-bottom: 75%;
+	}
+	
+  &__features {
+    width: 50%;
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+
+        font-weight: bold;
+        font-size: 60px;
+        color: $dark;
+      }
+    }
+	}
+	
+	&-info {
+		position: relative;
+		margin-bottom: 290px;
+
+		background-color: $green;
+
+		&:before {
+			content: ' ';
+			
+			position: absolute;
+			top: -130px;
+			right: 0;
+			left: 0;
+
+			height: 130px;
+
+			background: url(../images/main/bg-display-dots.png) center top no-repeat;
+			background-size: 100% auto;
+		}
+
+		&:after {
+			content: ' ';
+			
+			position: absolute;
+			right: 0;
+			bottom: -290px;
+			left: 0;
+
+			height: 290px;
+
+			background: url(../images/main/bg-display-dots.png) center bottom no-repeat;
+			background-size: 100% auto;
+		}
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+
+			height: 340px;
+		}
+
+		&__specs {
+			width: 50%;
+
+			&--batt {
+				background: url(../images/icons/ico-batt-b.png) right center no-repeat;
+				background-size: 23px 15px;
+			}
+
+			&--touch {
+				background: url(../images/icons/ico-touch-b.png) right center no-repeat;
+				background-size: 25px 14px;
+			}
+
+			&--resist {
+				background: url(../images/icons/ico-resist-b.png) 99.5% center no-repeat;
+				background-size: 20px 23px;
+			}
+
+			&--bright {
+				background: url(../images/icons/ico-bright-b.png) right center no-repeat;
+				background-size: 25px 25px;
+			}
+
+			ul {
+				li {
+					&:not(:last-child) {
+						margin-bottom: 35px;
+					}
+
+					padding: 0 50px 0 0;
+
+					font-weight: bold;
+					font-size: 23px;
+					color: $black;
+					text-align: right;
+				}
+			}
+		}
+
+		&__image {
+			z-index: 3;
+			position: relative;
+			width: 50%;
+
+			img {
+				position: absolute;
+				top: 50%;
+				right: 35px;
+
+				display: block;
+				width: 75%;
+				height: auto;
+
+				transform: translate(0, -50%);
+			}
+		}
+	}
+}

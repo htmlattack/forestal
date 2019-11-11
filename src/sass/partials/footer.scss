@@ -1,0 +1,107 @@
+.footer {
+  &__logo {
+    display: flex;
+    justify-content: center;
+
+    margin: 45px 0;
+
+    svg {
+      width: 145px;
+      height: 7px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 90px 0;
+
+    p {
+      margin: 0;
+
+      font-size: 13px;
+      line-height: 18px;
+      color: #999;
+    }
+  }
+
+  &__navs {
+    display: flex;
+  }
+
+  &__nav {
+    width: 16.6666667%;
+    margin: 0 0 100px 0;
+
+    h5 {
+      margin: 0 0 30px 0;
+
+      font-weight: bold;
+      font-size: 13px;
+      color: $black;
+    }
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 26px;
+        }
+
+        a {
+          font-size: 13px;
+          color: $black;
+          text-decoration: none;
+
+          &:hover {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+
+  &__bt {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid $gray;
+    padding: 10px 0;
+  }
+
+  &__copy {
+    p {
+      margin: 0;
+
+      font-size: 13px;
+      color: $black;
+    }
+  }
+
+  &__links {
+    margin: 0 35px 0 0;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 15px;
+
+          &:after {
+            content: "|";
+            margin-left: 15px;
+          }
+        }
+
+        a {
+          font-size: 13px;
+          color: $black;
+          text-decoration: none;
+
+          &:hover {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}

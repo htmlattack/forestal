@@ -1,0 +1,46 @@
+.main-battery {
+	padding: 100px 0 160px 0;
+	
+  &__heading {
+    margin: 0 0 75px 0;
+
+    h2 {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      color: $white;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 24px;
+      color: $green;
+    }
+  }
+
+  &__text {
+    margin: 0 0 230px 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 105%;
+      color: $white;
+    }
+  }
+
+  &__image {
+    margin: 0 0 200px 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

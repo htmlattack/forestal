@@ -1,0 +1,44 @@
+.main-asist {
+  padding: 240px 0 110px 0;
+
+  &__heading {
+    margin: 0 0 75px 0;
+
+    h2 {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      color: $dark;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 24px;
+      color: $green;
+    }
+  }
+
+  &__text {
+    margin: 0 0 170px 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 105%;
+      color: $dark;
+    }
+  }
+
+  &__image {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

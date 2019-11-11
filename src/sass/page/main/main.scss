@@ -1,0 +1,99 @@
+.main {
+  display: block;
+
+  &-black {
+    background: $black url(../images/main/bg-motor.png) center top no-repeat;
+    background-size: cover;
+  }
+
+  .wrapper {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    right: $gutter;
+
+    padding: 4px 12px;
+
+    background-color: $gray-light;
+    border-radius: 7px;
+
+    &--sp {
+      overflow: hidden;
+      width: 1px;
+      height: 25px;
+      margin: 0 12px;
+
+      background-color: #e3e3e3;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        a {
+          display: inline-block;
+          margin: 0 12px;
+
+          font-size: 13px;
+          color: $dark;
+          text-decoration: none;
+
+          &:hover {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+
+  &__bike {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 0 30px 0;
+    }
+
+    h3 {
+      margin: 0 0 5px 0;
+
+      font-weight: bold;
+      font-size: 44px;
+      color: $dark;
+      letter-spacing: 15px;
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: 500;
+      font-size: 14px;
+      color: $dark;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin: 140px 0 0 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 100%;
+      color: $dark;
+    }
+  }
+}

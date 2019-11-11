@@ -1,0 +1,41 @@
+.specs {
+  $this: &;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &--white {
+    #{$this}__item {
+      color: $white;
+    }
+  }
+
+  &__col {
+    width: 33.3333333%;
+    margin: 0 0 100px 0;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 225px;
+
+    color: $black;
+
+    h3 {
+      margin: 0 0 10px 0;
+
+      font-weight: bold;
+      font-size: 65px;
+
+      small {
+        font-size: 22px;
+      }
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: 500;
+    }
+  }
+}

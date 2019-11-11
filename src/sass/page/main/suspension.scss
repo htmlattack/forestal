@@ -1,0 +1,69 @@
+.main-suspension {
+  padding: 210px 0 140px 0;
+
+  &__heading {
+    margin: 0 0 75px 0;
+
+    h2 {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      color: $dark;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 24px;
+      color: $green;
+    }
+  }
+
+  &__text {
+    margin: 0 0 170px 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 105%;
+      color: $dark;
+    }
+  }
+
+  &__image {
+    margin: 0 0 140px 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text2 {
+    margin: 160px 0 120px 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 105%;
+      color: $dark;
+    }
+  }
+
+  &__image2 {
+    margin: 0 0 200px 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

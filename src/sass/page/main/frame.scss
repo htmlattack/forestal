@@ -1,0 +1,56 @@
+.main-frame {
+  padding: 140px 0 0 0;
+
+  &__heading {
+    margin: 0 0 100px 0;
+
+    h2 {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      color: $dark;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 24px;
+      color: $green;
+    }
+  }
+
+  &__image {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .tabs {
+    margin: 0 0 200px 0;
+  }
+
+  &__text {
+    margin: 0 0 140px 0;
+
+    p {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 105%;
+      color: $dark;
+    }
+  }
+
+  &__zoom {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

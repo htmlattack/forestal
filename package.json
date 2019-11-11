@@ -1,19 +1,14 @@
 {
-  "name": "m88thems-gulp",
+  "name": "starterkit",
   "version": "1.0.0",
-  "description": "Template for gulp-pug(jade)",
-  "main": "index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "m88thems",
-    "gulp",
-    "sass",
-    "pug"
-  ],
-  "author": "magl88",
-  "license": "ISC",
+  "keywords": [],
+  "author": "HTML Attack",
+  "license": "",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
@@ -21,17 +16,15 @@
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.3.2",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.4.0",
     "gulp-notify": "^3.2.0",
     "gulp-order": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.4.0",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^2.1.2",
-    "gulp.spritesmith": "^6.9.0",
-    "imagemin-pngquant": "^5.1.0"
+    "gulp-uglify": "^2.1.2"
   },
   "dependencies": {
     "gulp-file-include": "^2.1.1"
