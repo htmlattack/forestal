@@ -22,7 +22,25 @@
 @import "page/main/asist";
 @import "page/main/application";
 
+// Start
+@import "page/start/slider";
+@import "page/start/news";
+@import "page/start/watch";
+
+// News
+@import "page/news/heading";
+@import "page/news/list";
+@import "page/news/card";
+
+// Entry
+@import "page/entry/entry";
+
 
 // Components
 @import "components/specs";
 @import "components/tabs";
+@import "components/navbox";
+
+
+// Libs
+@import "libs/flickity";

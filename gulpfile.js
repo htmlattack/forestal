@@ -24,10 +24,8 @@ var	path = {
 		htmlHome: srcPath + '*.html',
 		htmlRigger: srcPath + '*.html',
 		htmlRiggerFiles: srcPath + '**/*.html',
-		js:   srcPath + 'js/**/*.js',
-		jsPath: srcPath + 'js/',
-		jsLib: srcPath + 'js/libs/**/*.js',
-		jsLibPath: srcPath + 'js/libs/',
+		js:   srcPath + 'js/*.js',
+		jsLib: srcPath + 'js/libs/*.js',
 		sass: srcPath + 'sass/*.+(sass|scss)',
 		sassPath: srcPath + 'sass/**/*.+(sass|scss)',
 	},
@@ -92,26 +90,23 @@ gulp.task('html:build', function () {
 
 // JS
 gulp.task('js:build', function(){
-	return gulp.src(path.source.jsLib)
+	return gulp.src([path.source.jsLib, path.source.js])
 		.pipe(plumber({
 			errorHandler: onError
 		}))
 		.pipe(order([
 			'jquery.min.js',
-			path.source.jsLib
+			path.source.jsLib,
 		]))
 		.pipe(sourcemaps.init())
 		.pipe(concat('app.js'))
-    	//.pipe(gulp.dest(path.build.js))
+    	// .pipe(gulp.dest(path.build.js))
 		.pipe(uglify())
 		.pipe(rename(function (path) {
 			path.extname = '.min.js'
 		}))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.js))
-		.on('error', function(err) {
-			console.error('Error in compress task', err.toString());
-		});
 });
 
 
@@ -140,28 +135,28 @@ gulp.task('sass:build', function () {
 
 
 // Clean
-gulp.task('clean:dist', function () {
-	return gulp.src(path.build.home, {
-		read: false,
-	}).pipe(plumber({
-		errorHandler: onError
-	})).pipe(clean());
-});
+// gulp.task('clean:dist', function () {
+// 	return gulp.src(path.build.home, {
+// 		read: false,
+// 	}).pipe(plumber({
+// 		errorHandler: onError
+// 	})).pipe(clean());
+// });
 
 
 // Dist
-gulp.task('dist', ['clean:dist'], function () {
-	gulp.src(path.build.css)
-		.pipe(plumber({
-			errorHandler: onError
-		}))
-		.pipe(gulp.dest(path.build.css))
-	gulp.src(path.source.js)
-		.pipe(plumber({
-			errorHandler: onError
-		}))
-		.pipe(gulp.dest(path.build.js))
-});
+// gulp.task('dist', ['clean:dist'], function () {
+// 	gulp.src(path.source.css)
+// 		.pipe(plumber({
+// 			errorHandler: onError
+// 		}))
+// 		.pipe(gulp.dest(path.build.css))
+// 	gulp.src(path.source.js)
+// 		.pipe(plumber({
+// 			errorHandler: onError
+// 		}))
+// 		.pipe(gulp.dest(path.build.js))
+// });
 
 
 // Watch
@@ -171,7 +166,7 @@ gulp.task('watch', function () {
 	gulp.watch(path.source.sass, ['sass:build']);
 	gulp.watch(path.source.sassPath, ['sass:build']);
 	gulp.watch(path.source.jsLib, ['js:build']);
-	gulp.watch(path.source.js).on('change', browserSync.reload);
+	gulp.watch(path.source.js, ['js:build', browserSync.reload]);
 });
 
 

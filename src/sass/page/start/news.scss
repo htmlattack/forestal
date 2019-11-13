@@ -1,0 +1,39 @@
+.start-news {
+  $this: &;
+
+  padding: 60px 0 100px 0;
+
+  &__heading {
+    margin: 0 0 50px 0;
+
+    h2 {
+      margin: 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      color: $dark;
+    }
+
+    p {
+      max-width: 290px;
+      margin: 0;
+
+      font-size: 14px;
+      line-height: 150%;
+      color: $dark;
+    }
+  }
+
+  &__list {
+    width: 100%;
+
+    .flickity-viewport {
+      overflow: visible;
+    }
+
+    .news-card__item {
+      width: calc(33.3333333% - 25px);
+      margin: 0 20px;
+    }
+  }
+}

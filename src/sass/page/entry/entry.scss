@@ -1,0 +1,145 @@
+.entry {
+  &-heading {
+    position: relative;
+
+    width: 100%;
+    max-width: 1500px;
+    margin: 135px auto 40px auto;
+
+    &__back {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: none;
+      margin: -10px 0 0 0;
+      padding: 0;
+
+      text-indent: -9999px;
+
+      background-color: transparent;
+
+      &:hover {
+        &:after {
+          border-bottom-color: $green;
+          border-left-color: $green;
+        }
+      }
+
+      &:after {
+        content: " ";
+
+        position: absolute;
+        right: 2px;
+        bottom: 6px;
+
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-bottom: 2px solid $black;
+        border-left: 2px solid $black;
+
+        transform: rotate(45deg);
+      }
+    }
+
+    &__title {
+      max-width: 750px;
+      margin: 0 0 20px 0;
+
+      h1 {
+        margin: 0;
+
+        font-weight: bold;
+        font-size: 93px;
+        line-height: 100%;
+        color: $black;
+      }
+    }
+
+    &__descr {
+      max-width: 250px;
+
+      p {
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 140%;
+        color: $black;
+      }
+    }
+  }
+
+  &-body {
+    .tac {
+      text-align: center;
+    }
+
+    .tar {
+      text-align: right;
+    }
+
+    .green {
+      color: $green;
+    }
+
+    h3 {
+      margin: 0 0 85px 0;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 110%;
+      color: $dark;
+    }
+
+    p {
+      margin: 0 0 50px 0;
+
+      font-size: 24px;
+      line-height: 40px;
+      color: $black;
+
+      &.mb-2x {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  &-gallery {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 170px auto;
+    padding: 0 30px;
+
+    box-sizing: border-box;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin: 0 -15px;
+    }
+
+    &__col {
+      width: 100%;
+      margin: 0 0 30px 0;
+      padding: 0 15px;
+
+      box-sizing: border-box;
+
+      &--half {
+        width: 50%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

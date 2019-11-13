@@ -12,44 +12,10 @@
     padding-bottom: 60px;
   }
 
-  &__nav {
+  .navbox {
     position: absolute;
     top: 0;
     right: $gutter;
-
-    padding: 4px 12px;
-
-    background-color: $gray-light;
-    border-radius: 7px;
-
-    &--sp {
-      overflow: hidden;
-      width: 1px;
-      height: 25px;
-      margin: 0 12px;
-
-      background-color: #e3e3e3;
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-
-      li {
-        a {
-          display: inline-block;
-          margin: 0 12px;
-
-          font-size: 13px;
-          color: $dark;
-          text-decoration: none;
-
-          &:hover {
-            color: $gray;
-          }
-        }
-      }
-    }
   }
 
   &__bike {
