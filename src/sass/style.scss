@@ -22,6 +22,13 @@
 @import "page/main/asist";
 @import "page/main/application";
 
+// Components
+@import "components/specs";
+@import "components/tabs";
+@import "components/navbox";
+@import "components/buttons";
+@import "components/inputs";
+
 // Start
 @import "page/start/slider";
 @import "page/start/news";
@@ -39,11 +46,16 @@
 @import "page/support/heading";
 @import "page/support/list";
 
-// Components
-@import "components/specs";
-@import "components/tabs";
-@import "components/navbox";
+// Account
+@import "page/account/account";
+@import "page/account/myinfo";
+@import "page/account/mybikes";
+@import "page/account/changepwd";
+@import "page/account/orders";
+@import "page/account/cart";
 
 
 // Libs
 @import "libs/flickity";
+@import "libs/jquery.formstyler";
+@import "libs/jquery.formstyler.theme";

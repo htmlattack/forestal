@@ -1,0 +1,46 @@
+.inp-group {
+  margin: 0 0 20px 0;
+
+  & > label {
+    display: block;
+    margin: 0 0 6px 0;
+
+    font-size: 14px;
+    line-height: 100%;
+    color: #808080;
+
+    &.mb2x {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.inp-line {
+  display: inline-flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  & + & {
+    margin-left: 40px;
+  }
+}
+
+.inp-style {
+  height: 40px;
+  border: none;
+  padding: 0 0 0 10px;
+
+  border-radius: 8px;
+  background-color: #f9f9f9;
+
+  font-size: 14px;
+  line-height: 100%;
+  color: $black;
+
+  @include placeholder($gray);
+}
+
+.inp-fw {
+  width: 100%;
+}

@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My info — Forestal</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+</head>
+
+<body>
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
   <symbol id="logo-forestal" viewBox="0 0 180 15">
     <path
@@ -90,3 +102,147 @@
     ></path>
   </symbol>
 </svg>
+
+<header class="header">
+  <div class="wrapper">
+    <div class="header__logo">
+      <a href="#">
+        <svg class="icon logo-forestal">
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#logo-forestal"
+          ></use>
+        </svg>
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Enduro</a></li>
+        <li><a href="#">Trail</a></li>
+        <li><a href="#">City</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="header__controls">
+      <ul>
+        <li>
+          <a href="#">
+            <svg class="icon icon-cart">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#icon-cart"
+              ></use>
+            </svg>
+          
+            <div class="label">1</div>
+          
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <svg class="icon icon-profile">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#icon-profile"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div class="account">
+	<div class="wrapper">
+		<aside class="account__sidebar">
+			<nav class="account__nav">
+  <ul>
+    <li  class="is-active" >
+      <a href="./myinfo.html">My info</a>
+    </li>
+    <li >
+      <a href="./mybikes.html">My bikes</a>
+    </li>
+    <li >
+      <a href="./changepwd.html">Change password</a>
+    </li>
+    <li >
+      <a href="./orders.html">Orders</a>
+    </li>
+  </ul>
+</nav>
+		</aside>
+
+		<div class="account__body">
+			<div class="myinfo">
+  <div class="myinfo-heading">
+    <h2>Hello, Sasha Grey</h2>
+    <p>Please keep the information up to date for better service.</p>
+  </div>
+
+  <div class="myinfo-form">
+    <form action="#">
+      <div class="inp-group">
+        <label for="myinfo-fn">First name</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="myinfo-fn">
+      </div>
+
+      <div class="inp-group">
+        <label for="myinfo-ln">Last name</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="myinfo-ln">
+      </div>
+
+      <div class="inp-group">
+        <label class="mb2x">Gender</label>
+        <div class="inp-row">
+          <label class="inp-line">
+            <input type="radio" name="gender" class="inp-decorate" checked>
+            <span>Female</span>
+          </label>
+
+          <label class="inp-line">
+            <input type="radio" name="gender" class="inp-decorate">
+            <span>Male</span>
+          </label>
+
+          <label class="inp-line">
+            <input type="radio" name="gender" class="inp-decorate">
+            <span>Free</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="inp-group">
+        <label for="myinfo-email">Email (login)</label>
+        <input type="email" name="#" class="inp-style inp-fw" id="myinfo-email">
+      </div>
+
+      <div class="inp-group">
+        <label for="myinfo-mobile">Mobile:</label>
+        <input type="tel" name="#" class="inp-style inp-fw" id="myinfo-mobile">
+      </div>
+
+      <div class="inp-group">
+        <label for="myinfo-date">Date of birth</label>
+        <input type="date" name="#" class="inp-style inp-fw" id="myinfo-date">
+      </div>
+
+      <button class="btn btn-green btn-submit">Save</button>
+    </form>
+  </div>
+</div>
+		</div>
+	</div>
+</div>
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

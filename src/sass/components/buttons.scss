@@ -1,0 +1,63 @@
+.btn {
+  $this: &;
+
+  &-green {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 54px;
+    border: 0;
+    padding: 0 25px;
+
+    border-radius: 21px;
+    background-color: $green;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: lighten($green, 3);
+    }
+  }
+
+  &-gray {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 54px;
+    border: 0;
+    padding: 0 25px;
+
+    border-radius: 21px;
+    background-color: #efefef;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: lighten($green, 3);
+    }
+  }
+
+  &--mini {
+    height: 27px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-radius: 8px;
+
+    font-weight: normal;
+    font-size: 12px;
+  }
+}

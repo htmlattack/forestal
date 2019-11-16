@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change Password — Forestal</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+</head>
+
+<body>
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
   <symbol id="logo-forestal" viewBox="0 0 180 15">
     <path
@@ -90,3 +102,121 @@
     ></path>
   </symbol>
 </svg>
+
+<header class="header">
+  <div class="wrapper">
+    <div class="header__logo">
+      <a href="#">
+        <svg class="icon logo-forestal">
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#logo-forestal"
+          ></use>
+        </svg>
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Enduro</a></li>
+        <li><a href="#">Trail</a></li>
+        <li><a href="#">City</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="header__controls">
+      <ul>
+        <li>
+          <a href="#">
+            <svg class="icon icon-cart">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#icon-cart"
+              ></use>
+            </svg>
+          
+            <div class="label">1</div>
+          
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <svg class="icon icon-profile">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#icon-profile"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div class="account">
+	<div class="wrapper">
+		<aside class="account__sidebar">
+			<nav class="account__nav">
+  <ul>
+    <li >
+      <a href="./myinfo.html">My info</a>
+    </li>
+    <li >
+      <a href="./mybikes.html">My bikes</a>
+    </li>
+    <li  class="is-active" >
+      <a href="./changepwd.html">Change password</a>
+    </li>
+    <li >
+      <a href="./orders.html">Orders</a>
+    </li>
+  </ul>
+</nav>
+		</aside>
+
+		<div class="account__body">
+			<div class="changepwd">
+  <div class="changepwd-heading">
+    <h2>Change password</h2>
+    <p>Passwords must contain at least 8 characters, 1 upper case, 1 lower case and 1 numeric.</p>
+  </div>
+
+  <div class="changepwd-form">
+    <form action="#">
+      <div class="inp-group">
+        <label for="pwd1">Old password</label>
+        <input type="password" name="#" class="inp-style inp-fw" id="pwd1">
+      </div>
+
+      <div class="inp-group">
+        <label for="pwd2">New password</label>
+        <input type="password" name="#" class="inp-style inp-fw" id="pwd2">
+      </div>
+
+      <div class="inp-group">
+        <label for="pwd3">New password again</label>
+        <input type="password" name="#" class="inp-style inp-fw" id="pwd3">
+      </div>
+
+      <button class="btn btn-green btn-submit">Save</button>
+    </form>
+  </div>
+
+  <div class="changepwd-error">
+    <p class="red">Error text Error text Error text Error text Error text </p>
+  </div>
+</div>
+		</div>
+	</div>
+</div>
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

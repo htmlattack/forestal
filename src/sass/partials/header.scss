@@ -56,6 +56,9 @@
         }
 
         a {
+          position: relative;
+
+          display: block;
           text-decoration: none;
 
           .icon {
@@ -67,6 +70,14 @@
               fill: $gray;
             }
           }
+        }
+
+        .label {
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          transform: translate(33%,-50%);
         }
       }
     }

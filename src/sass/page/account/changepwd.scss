@@ -1,0 +1,43 @@
+.changepwd {
+  &-heading {
+		margin: 0 0 40px 0;
+
+		h2 {
+			margin: 0 0 5px 0;
+
+			font-weight: bold;
+			font-size: 26px;
+			color: $black;
+		}
+
+		p {
+			max-width: 360px;
+			margin: 0;
+
+			font-size: 14px;
+			line-height: 110%;
+			color: #666;
+		}
+	}
+
+	&-form {
+		width: 100%;
+		max-width: 360px;
+		margin: 0 0 20px 0;
+
+		.btn-submit {
+			width: 100%;
+			max-width: 230px;
+			margin-top: 40px;
+		}
+	}
+
+	&-error {
+		p {
+			margin: 0;
+
+			font-size: 14px;
+			color: $red;
+		}
+	}
+}

@@ -82,3 +82,24 @@ svg.icon {
 .highlight {
   color: $green;
 }
+
+
+.label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 18px;
+  height: 18px;
+  padding: 2px 4px 0 4px;
+
+  background-color: $green;
+  border-radius: 9px;
+  box-sizing: border-box;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+  color: $black;
+  text-align: center;
+}

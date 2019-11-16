@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Orders — Forestal</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+</head>
+
+<body>
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
   <symbol id="logo-forestal" viewBox="0 0 180 15">
     <path
@@ -90,3 +102,373 @@
     ></path>
   </symbol>
 </svg>
+
+<header class="header">
+  <div class="wrapper">
+    <div class="header__logo">
+      <a href="#">
+        <svg class="icon logo-forestal">
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#logo-forestal"
+          ></use>
+        </svg>
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Enduro</a></li>
+        <li><a href="#">Trail</a></li>
+        <li><a href="#">City</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="header__controls">
+      <ul>
+        <li>
+          <a href="#">
+            <svg class="icon icon-cart">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#icon-cart"
+              ></use>
+            </svg>
+          
+            <div class="label">1</div>
+          
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <svg class="icon icon-profile">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#icon-profile"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div class="account">
+	<div class="wrapper">
+		<aside class="account__sidebar">
+			<nav class="account__nav">
+  <ul>
+    <li >
+      <a href="./myinfo.html">My info</a>
+    </li>
+    <li >
+      <a href="./mybikes.html">My bikes</a>
+    </li>
+    <li >
+      <a href="./changepwd.html">Change password</a>
+    </li>
+    <li  class="is-active" >
+      <a href="./orders.html">Orders</a>
+    </li>
+  </ul>
+</nav>
+		</aside>
+
+		<div class="account__body">
+			<div class="orders">
+  <div class="orders-heading">
+    <h2>Orders</h2>
+    <p>Summary of your orders and the projected delivery date</p>
+  </div>
+
+  <div class="orders-list">
+    <div class="orders-item">
+      <div class="orders-item-heading">
+        <div class="orders-item-heading__invoice">
+          invoice #002-{user_ID} 29.10.2019
+        </div>
+
+        <div class="orders-item-heading__summ">
+          Sum: 1 Pcs. / € 1 499,00
+        </div>
+      </div>
+
+      <div class="orders-item-status">
+        <div class="orders-item-status-list">
+          <div class="orders-item-status-item is-active">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Ordered</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">29.10.2019 at 10:10</div>
+          </div>
+
+          <div class="orders-item-status-item is-active">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Paid</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">29.10.2019 at 12:20</div>
+          </div>
+
+          <div class="orders-item-status-item">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Produced</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">13.04.2020</div>
+          </div>
+
+          <div class="orders-item-status-item">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Shipped (est.)</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">13.04.2020</div>
+          </div>
+
+          <div class="orders-item-status-item">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Delivery (est.)</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">13.04.2020</div>
+          </div>
+        </div>
+
+        <div class="orders-item-status-info">
+          <p>Verylongstreetname 70/94, Barcelona, Spain, 08001, Sasha Grey</p>
+        </div>
+      </div>
+      
+      <div class="cart-list">
+        <div class="cart-item">
+          <div class="cart-item__wrapper">
+            <div class="cart-item__image">
+              <img src="assets/images/cart/cart1.png" alt="#" />
+            </div>
+
+            <div class="cart-item__info">
+              <h4>Aurora</h4>
+              <p>Li-ion battery</p>
+              <a href="#" class="js-cart-more-toggle">Show details</a>
+            </div>
+
+            <div class="cart-item__price">€ 1 499</div>
+            <div class="cart-item__qty">1</div>
+            <div class="cart-item__total">€ 1 499</div>
+          </div>
+
+          <div class="cart-item__more">
+            <ul>
+              <li>Frame e- carbon 29" enduro multilink</li>
+              <li>
+                Horquilla fox 36 factory 29" grip2 kashima 160mm negra rake 51mm
+              </li>
+              <li>Amortiguador dvo topaz t3air 230 x 60</li>
+              <li>
+                Direccion acros integrada (sup. Ai-41 is41/28,6 inf. Ai-52
+                is52/30+40 )
+              </li>
+              <li>Amortiguador fox float x2 factory kashima 230 x 60</li>
+              <li>Manillar carbon gemini kastor</li>
+              <li>Tija rock shox reverb axs 150mm 31.6</li>
+              <li>Sillin fizik monte kium enduro</li>
+              <li>Puños production privee oem</li>
+              <li>Pulsador trigger sram xx1 eagle axs electronic</li>
+              <li>Cambio trasero sram xx1 eagle axs electronic</li>
+              <li>Cassette sram xx1 eagle axs electronic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="orders-item">
+      <div class="orders-item-heading">
+        <div class="orders-item-heading__invoice">
+          invoice #001-{user_ID} 29.10.2019
+        </div>
+
+        <div class="orders-item-heading__summ">
+          Sum: 3 Pcs. / € 10 397,00
+        </div>
+      </div>
+
+      <div class="orders-item-status">
+        <div class="orders-item-status-list">
+          <div class="orders-item-status-item is-active">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Ordered</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">29.10.2019 at 10:10</div>
+          </div>
+
+          <div class="orders-item-status-item is-active">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Paid</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">29.10.2019 at 12:20</div>
+          </div>
+
+          <div class="orders-item-status-item">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Produced</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">13.04.2020</div>
+          </div>
+
+          <div class="orders-item-status-item">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Shipped (est.)</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">13.04.2020</div>
+          </div>
+
+          <div class="orders-item-status-item">
+            <div class="orders-item-status-item__dot"></div>
+            <div class="orders-item-status-item__name">Delivery (est.)</div>
+            <div class="orders-item-status-item__line"></div>
+            <div class="orders-item-status-item__date">13.04.2020</div>
+          </div>
+        </div>
+
+        <div class="orders-item-status-info">
+          <p>Verylongstreetname 70/94, Barcelona, Spain, 08001, Sasha Grey</p>
+        </div>
+      </div>
+
+      <div class="cart-list">
+        <div class="cart-item">
+          <div class="cart-item__wrapper">
+            <div class="cart-item__image">
+              <img src="assets/images/cart/cart1.png" alt="#" />
+            </div>
+
+            <div class="cart-item__info">
+              <h4>Aurora</h4>
+              <p>Li-ion battery</p>
+              <a href="#" class="js-cart-more-toggle">Show details</a>
+            </div>
+
+            <div class="cart-item__price">€ 1 499</div>
+            <div class="cart-item__qty">1</div>
+            <div class="cart-item__total">€ 1 499</div>
+          </div>
+
+          <div class="cart-item__more">
+            <ul>
+              <li>Frame e- carbon 29" enduro multilink</li>
+              <li>
+                Horquilla fox 36 factory 29" grip2 kashima 160mm negra rake 51mm
+              </li>
+              <li>Amortiguador dvo topaz t3air 230 x 60</li>
+              <li>
+                Direccion acros integrada (sup. Ai-41 is41/28,6 inf. Ai-52
+                is52/30+40 )
+              </li>
+              <li>Amortiguador fox float x2 factory kashima 230 x 60</li>
+              <li>Manillar carbon gemini kastor</li>
+              <li>Tija rock shox reverb axs 150mm 31.6</li>
+              <li>Sillin fizik monte kium enduro</li>
+              <li>Puños production privee oem</li>
+              <li>Pulsador trigger sram xx1 eagle axs electronic</li>
+              <li>Cambio trasero sram xx1 eagle axs electronic</li>
+              <li>Cassette sram xx1 eagle axs electronic</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item__wrapper">
+            <div class="cart-item__image">
+              <img src="assets/images/cart/cart2.png" alt="#" />
+            </div>
+
+            <div class="cart-item__info">
+              <h4>Aurora</h4>
+              <p>Li-ion battery</p>
+              <a href="#" class="js-cart-more-toggle">Show details</a>
+            </div>
+
+            <div class="cart-item__price">€ 1 499</div>
+            <div class="cart-item__qty">1</div>
+            <div class="cart-item__total">€ 1 499</div>
+          </div>
+
+          <div class="cart-item__more">
+            <ul>
+              <li>Frame e- carbon 29" enduro multilink</li>
+              <li>
+                Horquilla fox 36 factory 29" grip2 kashima 160mm negra rake 51mm
+              </li>
+              <li>Amortiguador dvo topaz t3air 230 x 60</li>
+              <li>
+                Direccion acros integrada (sup. Ai-41 is41/28,6 inf. Ai-52
+                is52/30+40 )
+              </li>
+              <li>Amortiguador fox float x2 factory kashima 230 x 60</li>
+              <li>Manillar carbon gemini kastor</li>
+              <li>Tija rock shox reverb axs 150mm 31.6</li>
+              <li>Sillin fizik monte kium enduro</li>
+              <li>Puños production privee oem</li>
+              <li>Pulsador trigger sram xx1 eagle axs electronic</li>
+              <li>Cambio trasero sram xx1 eagle axs electronic</li>
+              <li>Cassette sram xx1 eagle axs electronic</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item__wrapper">
+            <div class="cart-item__image">
+              <img src="assets/images/cart/cart3.png" alt="#" />
+            </div>
+
+            <div class="cart-item__info">
+              <h4>Aurora</h4>
+              <p>Li-ion battery</p>
+              <a href="#" class="js-cart-more-toggle">Show details</a>
+            </div>
+
+            <div class="cart-item__price">€ 1 499</div>
+            <div class="cart-item__qty">1</div>
+            <div class="cart-item__total">€ 1 499</div>
+          </div>
+
+          <div class="cart-item__more">
+            <ul>
+              <li>Frame e- carbon 29" enduro multilink</li>
+              <li>
+                Horquilla fox 36 factory 29" grip2 kashima 160mm negra rake 51mm
+              </li>
+              <li>Amortiguador dvo topaz t3air 230 x 60</li>
+              <li>
+                Direccion acros integrada (sup. Ai-41 is41/28,6 inf. Ai-52
+                is52/30+40 )
+              </li>
+              <li>Amortiguador fox float x2 factory kashima 230 x 60</li>
+              <li>Manillar carbon gemini kastor</li>
+              <li>Tija rock shox reverb axs 150mm 31.6</li>
+              <li>Sillin fizik monte kium enduro</li>
+              <li>Puños production privee oem</li>
+              <li>Pulsador trigger sram xx1 eagle axs electronic</li>
+              <li>Cambio trasero sram xx1 eagle axs electronic</li>
+              <li>Cassette sram xx1 eagle axs electronic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>
+	</div>
+</div>
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
