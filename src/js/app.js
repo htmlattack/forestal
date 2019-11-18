@@ -41,4 +41,34 @@ $(document).ready(function(){
         $this.closest('.cart-item').find('.cart-item__more').slideToggle(250);
         $this.text($this.text() == 'Show details' ? 'Hide details' : 'Show details');
     });
+
+    $('.qty__minus').on('click', function(e) {
+        e.preventDefault();
+
+        var $input = $(this).closest('.qty').find('.qty__value');
+        var value = parseInt($input.val());
+     
+        if (value > 1) {
+            value = value - 1;
+        } else {
+            value = 0;
+        }
+     
+        $input.val(value);
+    });
+     
+    $('.qty__plus').on('click', function(e) {
+        e.preventDefault();
+
+        var $input = $(this).closest('.qty').find('.qty__value');
+        var value = parseInt($input.val());
+     
+        if (value < 100) {
+            value = value + 1;
+        } else {
+            value =100;
+        }
+
+        $input.val(value);
+    });
 });

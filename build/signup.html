@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>My bikes — Forestal</title>
+<title>SignUp — Forestal</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
@@ -159,110 +159,32 @@
 </header>
 
 
-<div class="account">
+<div class="auth">
 	<div class="wrapper">
-		<aside class="account__sidebar">
-			<nav class="account__nav">
-  <ul>
-    <li >
-      <a href="./myinfo.html">My info</a>
-    </li>
-    <li  class="is-active" >
-      <a href="./mybikes.html">My bikes</a>
-    </li>
-    <li >
-      <a href="./changepwd.html">Change password</a>
-    </li>
-    <li >
-      <a href="./orders.html">Orders</a>
-    </li>
-  </ul>
-</nav>
-		</aside>
-
-		<div class="account__body">
-			<div class="mybikes">
-  <div class="mybikes-heading">
-    <h2>My bikes</h2>
-    <p>Bikes connected to your account </p>
+		<div class="auth__in">
+			<div class="signup">
+  <div class="auth-heading">
+    <h2>Sign up</h2>
+    <p>Already have an account? <a href="./signin.html">Sign in</a></p>
   </div>
 
-  <div class="mybikes-list">
-    <div class="mybikes-item">
-      <div class="mybikes-item__image">
-        <img src="assets/images/account/mybikes1.jpg" alt="#">
-        <div class="mybikes-item__title">Siryon</div>
-      </div>
-      <div class="mybikes-item__body">
-        <div class="mybikes-item__in">
-          <div class="mybikes-item__specs">
-            <span><b>16</b> <small>days</small> <b>46</b> <small>h</small> <b>34</b> <small>m</small> <b>44</b> <small>s</small></span>
-            <p>Total ride time</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>26</b> <small>km/h</small></span>
-            <p>Avg speed</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>382</b> <small>km</small></span>
-            <p>Total distance</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>166</b></span>
-            <p>Battery cycles</p>
-          </div>
-        </div>
-
-        <div class="mybikes-item__controls">
-          <button class="btn btn-gray btn--mini">Delete</button>
-          <button class="btn btn-gray btn--mini">Loss mode</button>
-          <button class="btn btn-gray btn--mini">Unlink</button>
-        </div>
-      </div>
+  <div class="auth-form">
+    <div class="inp-group">
+      <label for="signup-mail">E-mail</label>
+      <input type="email" name="#" class="inp-style inp-fw" id="signup-mail">
     </div>
 
-    <div class="mybikes-item">
-      <div class="mybikes-item__image">
-        <img src="assets/images/account/mybikes2.jpg" alt="#">
-        <div class="mybikes-item__title">Siryon</div>
-      </div>
-      <div class="mybikes-item__body">
-        <div class="mybikes-item__in">
-          <div class="mybikes-item__specs">
-            <span><b>16</b> <small>days</small> <b>46</b> <small>h</small> <b>34</b> <small>m</small> <b>44</b> <small>s</small></span>
-            <p>Total ride time</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>26</b> <small>km/h</small></span>
-            <p>Avg speed</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>382</b> <small>km</small></span>
-            <p>Total distance</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>166</b></span>
-            <p>Battery cycles</p>
-          </div>
-        </div>
-
-        <div class="mybikes-item__controls">
-          <button class="btn btn-gray btn--mini">Delete</button>
-          <button class="btn btn-gray btn--mini">Loss mode</button>
-          <button class="btn btn-gray btn--mini">Unlink</button>
-        </div>
-      </div>
+    <div class="inp-group">
+      <label for="signup-pwd">Password</label>
+      <input type="password" name="#" class="inp-style inp-fw" id="signup-pwd">
     </div>
-  </div>
 
-  <div class="mybikes-footer">
-    <p>You can add new bike in mobile app</p>
+    <div class="inp-group">
+      <label for="signup-pwd2">Retype password</label>
+      <input type="password" name="#" class="inp-style inp-fw" id="signup-pwd2">
+    </div>
+
+    <button class="btn btn-green btn-submit">Sign up</button>
   </div>
 </div>
 		</div>

@@ -1,0 +1,50 @@
+.auth {
+	height: calc(100vh - #{$header-height});
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		min-height: 100%;
+		padding: 40px 0;
+
+		box-sizing: border-box;
+	}
+
+	&-heading {
+		margin: 0 0 40px 0;
+
+		h2 {
+			margin: 0 0 5px 0;
+
+			font-weight: bold;
+			font-size: 26px;
+			color: $black;
+		}
+
+		p {
+			max-width: 360px;
+			margin: 0;
+
+			font-size: 14px;
+			line-height: 110%;
+			color: #666;
+
+			a {
+				font-weight: bold;
+				color: $green;
+				text-decoration: none;
+
+				&:hover {
+					color: $black;
+				}
+			}
+		}
+	}
+	
+	&__in {
+		width: 100%;
+		max-width: 360px;
+	}
+}

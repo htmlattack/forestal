@@ -1,0 +1,139 @@
+.checkout {
+	width: 100%;
+	max-width: 360px;
+
+	&-heading {
+		margin: 0 0 80px 0;
+
+		h2 {
+			margin: 0 0 5px 0;
+
+			font-weight: bold;
+			font-size: 26px;
+			color: $black;
+		}
+
+		p {
+			max-width: 360px;
+			margin: 0;
+
+			font-size: 14px;
+			line-height: 110%;
+			color: #666;
+		}
+	}
+
+	&-form {
+		.inp-row {
+			display: flex;
+			margin: 0 -10px;
+
+			&--street {
+				.inp-group {
+					width: 100%;
+					padding: 0 10px;
+
+					&:last-child {
+						width: 83px;
+						min-width: 83px;
+					}
+				}
+			}
+
+			&--card {
+				margin: 0 -15px;
+
+				.inp-group {
+					width: 100%;
+					padding: 0 15px;
+
+					&:first-child {
+						width: 110px;
+						min-width: 110px;
+					}
+				}
+			}
+		}
+
+		&-row {
+			margin: 0 0 100px 0;
+
+			&--last {
+				margin-bottom: 30px;
+			}
+
+			h4 {
+				margin: 0 0 40px 0;
+
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 100%;
+				color: $black;
+			}
+		}
+	}
+
+	&-info {
+		margin: 0 0 70px 0;
+
+		ul {
+			li {
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+
+				font-size: 16px;
+			}
+		}
+	}
+
+	&-controls {
+		display: flex;
+		justify-content: space-between;
+
+		.btn-back {
+			padding-top: 2px;
+
+			&:hover {
+				color: $gray;
+
+				span {
+					&:before {
+						border-bottom-color: $gray;
+						border-left-color: $gray;
+					}
+				}
+			}
+			
+			span {
+				position: relative;
+
+				display: inline-block;
+				padding: 0 0 0 25px;
+
+				&:before {
+					content: '';
+
+					position: absolute;
+					top: 3px;
+					left: 0;
+
+					display: block;
+					width: 7px;
+					height: 7px;
+					border-bottom: 1px solid $black;
+					border-left: 1px solid $black;
+
+					transform: rotate(45deg);
+
+					transition: all 200ms ease;
+				}
+			}
+		}
+
+		.btn-green {
+			width: 100%;
+			max-width: 232px;
+		}
+	}
+}

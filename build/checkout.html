@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>My bikes — Forestal</title>
+<title>Checkout — Forestal</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
@@ -167,7 +167,7 @@
     <li >
       <a href="./myinfo.html">My info</a>
     </li>
-    <li  class="is-active" >
+    <li >
       <a href="./mybikes.html">My bikes</a>
     </li>
     <li >
@@ -181,88 +181,118 @@
 		</aside>
 
 		<div class="account__body">
-			<div class="mybikes">
-  <div class="mybikes-heading">
-    <h2>My bikes</h2>
-    <p>Bikes connected to your account </p>
+			<div class="checkout">
+  <div class="checkout-heading">
+    <h2>Checkout</h2>
+    <p>Items are not reserved. The reservation will be made after order.</p>
   </div>
 
-  <div class="mybikes-list">
-    <div class="mybikes-item">
-      <div class="mybikes-item__image">
-        <img src="assets/images/account/mybikes1.jpg" alt="#">
-        <div class="mybikes-item__title">Siryon</div>
+  <div class="checkout-form">
+    <div class="checkout-form-row">
+      <h4>Delivery address:</h4>
+
+      <div class="inp-group">
+        <label for="chk-rec">Recipient</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="chk-rec">
       </div>
-      <div class="mybikes-item__body">
-        <div class="mybikes-item__in">
-          <div class="mybikes-item__specs">
-            <span><b>16</b> <small>days</small> <b>46</b> <small>h</small> <b>34</b> <small>m</small> <b>44</b> <small>s</small></span>
-            <p>Total ride time</p>
-          </div>
 
-          <div class="mybikes-item__specs">
-            <span><b>26</b> <small>km/h</small></span>
-            <p>Avg speed</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>382</b> <small>km</small></span>
-            <p>Total distance</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>166</b></span>
-            <p>Battery cycles</p>
-          </div>
+      <div class="inp-row inp-row--street">
+        <div class="inp-group">
+          <label for="chk-street">Street + №</label>
+          <input type="text" name="#" class="inp-style inp-fw" id="chk-street">
         </div>
 
-        <div class="mybikes-item__controls">
-          <button class="btn btn-gray btn--mini">Delete</button>
-          <button class="btn btn-gray btn--mini">Loss mode</button>
-          <button class="btn btn-gray btn--mini">Unlink</button>
+        <div class="inp-group">
+          <label for="chk-flat">Flat</label>
+          <input type="text" name="#" class="inp-style inp-fw" id="chk-flat">
         </div>
+      </div>
+
+      <div class="inp-group">
+        <label for="chk-zip">ZIP</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="chk-zip">
+      </div>
+
+      <div class="inp-group">
+        <label for="chk-town">Town</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="chk-town">
+      </div>
+
+      <div class="inp-group">
+        <label for="chk-country">Country</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="chk-country">
       </div>
     </div>
 
-    <div class="mybikes-item">
-      <div class="mybikes-item__image">
-        <img src="assets/images/account/mybikes2.jpg" alt="#">
-        <div class="mybikes-item__title">Siryon</div>
-      </div>
-      <div class="mybikes-item__body">
-        <div class="mybikes-item__in">
-          <div class="mybikes-item__specs">
-            <span><b>16</b> <small>days</small> <b>46</b> <small>h</small> <b>34</b> <small>m</small> <b>44</b> <small>s</small></span>
-            <p>Total ride time</p>
-          </div>
+    <div class="checkout-form-row">
+      <h4>Invoice address:</h4>
 
-          <div class="mybikes-item__specs">
-            <span><b>26</b> <small>km/h</small></span>
-            <p>Avg speed</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>382</b> <small>km</small></span>
-            <p>Total distance</p>
-          </div>
-
-          <div class="mybikes-item__specs">
-            <span><b>166</b></span>
-            <p>Battery cycles</p>
-          </div>
-        </div>
-
-        <div class="mybikes-item__controls">
-          <button class="btn btn-gray btn--mini">Delete</button>
-          <button class="btn btn-gray btn--mini">Loss mode</button>
-          <button class="btn btn-gray btn--mini">Unlink</button>
-        </div>
+      <div class="inp-group">
+        <select name="#" class="inp-decorate inp-fw">
+          <option>Same as delivery address</option>
+          <option>Same as delivery address 2</option>
+          <option>Same as delivery address 3</option>
+        </select>
       </div>
     </div>
-  </div>
 
-  <div class="mybikes-footer">
-    <p>You can add new bike in mobile app</p>
+    <div class="checkout-form-row checkout-form-row--last">
+      <h4>Payment method</h4>
+
+      <div class="inp-group">
+        <label for="chk-cardtype">Card type</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="chk-cardtype">
+      </div>
+
+      <div class="inp-group">
+        <label for="chk-cardno">Card №</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="chk-cardno">
+      </div>
+
+      <div class="inp-row inp-row--card">
+        <div class="inp-group">
+          <label for="chk-cardexpiry">Expiry date</label>
+          <input type="text" name="#" class="inp-style inp-fw" id="chk-cardexpiry">
+        </div>
+
+        <div class="inp-group">
+          <label for="chk-cardyear">Year</label>
+          <select name="#" class="inp-decorate inp-fw" id="chk-cardyear">
+            <option value="#">2019</option>
+            <option value="#">2018</option>
+            <option value="#">2017</option>
+            <option value="#">2016</option>
+            <option value="#">2015</option>
+            <option value="#">2014</option>
+            <option value="#">2013</option>
+          </select>
+        </div>
+
+        <div class="inp-group">
+          <label for="chk-cardsec">Security code</label>
+          <input type="text" name="#" maxlength="3" class="inp-style inp-fw" id="chk-cardsec">
+        </div>
+      </div>
+
+      <div class="inp-group">
+        <label for="chk-cardname">Name</label>
+        <input type="text" name="#" class="inp-style inp-fw" id="chk-cardname">
+      </div>
+    </div>
+
+    <div class="checkout-info">
+      <ul>
+        <li>Production start: <b>Feb 2020</b></li>
+        <li>Forecast delivery date: <b>April 2020</b></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="checkout-controls">
+    <button class="btn btn-back">
+      <span>Back</span>
+    </button>
+    <button class="btn btn-green">Save</button>
   </div>
 </div>
 		</div>

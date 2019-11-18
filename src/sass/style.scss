@@ -53,7 +53,11 @@
 @import "page/account/changepwd";
 @import "page/account/orders";
 @import "page/account/cart";
+@import "page/account/checkout";
 
+// Auth
+@import "page/auth/auth";
+@import "page/auth/signup";
 
 // Libs
 @import "libs/flickity";
