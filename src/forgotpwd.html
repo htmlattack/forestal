@@ -1,0 +1,24 @@
+@@include('partials/head.html', {
+	"title": "SignUp — Forestal"
+})
+@@include('partials/header.html', {
+	"label": "1"
+})
+
+<div class="auth">
+	<div class="auth-controls">
+		<div class="wrapper">
+			<a href="@@webRoot/signin.html" class="btn btn-back">
+				<span>Back</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="auth__in">
+			@@include('page/auth/forgot.html')
+		</div>
+	</div>
+</div>
+
+@@include('partials/foot.html')

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>SignIn — Forestal</title>
+<title>SignUp — Forestal</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
@@ -160,31 +160,29 @@
 
 
 <div class="auth">
+	<div class="auth-controls">
+		<div class="wrapper">
+			<a href="./signin.html" class="btn btn-back">
+				<span>Back</span>
+			</a>
+		</div>
+	</div>
+
 	<div class="wrapper">
 		<div class="auth__in">
-			<div class="signup">
+			<div class="forgot">
   <div class="auth-heading">
-    <h2>Sign in</h2>
-    <p>Don’t have an account? <a href="./signup.html">Sign up</a></p>
+    <h2>Password recover</h2>
+    <p>Please enter e-mail to get magic link for recover account</p>
   </div>
 
   <div class="auth-form">
     <div class="inp-group">
-      <label for="signin-login">Login</label>
-      <input type="text" name="#" class="inp-style inp-fw" id="signin-login">
+      <label for="recover-mail">E-mail</label>
+      <input type="email" name="#" class="inp-style inp-fw" id="recover-mail">
     </div>
 
-    <div class="inp-group inp-error">
-      <label for="signin-pwd">Password</label>
-      <input type="password" name="#" class="inp-style inp-fw" id="signin-pwd">
-      <span class="inp-error__text">Incorrect password</span>
-    </div>
-
-    <div class="inp-group">
-      <a href="./forgotpwd.html">Forgot password?</a>
-    </div>
-
-    <button class="btn btn-green btn-submit">Sign in</button>
+    <button class="btn btn-green btn-submit">Recover</button>
   </div>
 </div>
 		</div>
