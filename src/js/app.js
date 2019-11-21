@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    // Main vide
+    var main_video = $('.main__video');
+
+    if(main_video.length) {
+        $(window).on('load', function(){
+            main_video.find('video')[0].play();
+        });
+    }
+
     var start_products = $('.start-products-slider');
 
     if(start_products.length) {

@@ -1,5 +1,7 @@
 .main {
   display: block;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
 
   &-black {
     background: $black url(../images/main/bg-motor.png) center top no-repeat;
@@ -8,8 +10,6 @@
 
   .wrapper {
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   .navbox {
@@ -19,6 +19,10 @@
   }
 
   &__bike {
+    z-index: 5;
+    position: relative;
+    top: -80px;
+
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
@@ -47,6 +51,14 @@
       font-size: 14px;
       color: $dark;
       text-align: center;
+    }
+  }
+
+  &__video {
+    video {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
 
