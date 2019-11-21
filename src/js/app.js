@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // Main vide
+    // Main video
     var main_video = $('.main__video');
 
     if(main_video.length) {
@@ -80,4 +80,10 @@ $(document).ready(function(){
 
         $input.val(value);
     });
+
+    // If safari add class
+    if (navigator.userAgent.indexOf('Safari') != -1 &&
+        navigator.userAgent.indexOf('Chrome') == -1) {
+        document.body.className += "safari";
+    }
 });
