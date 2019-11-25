@@ -7,8 +7,7 @@
     
     &__center {
         display: flex;
-        -webkit-justify-content: center;
-                justify-content: center;
+        justify-content: center;
             
             .cart {
                 margin-left: auto;
@@ -20,9 +19,7 @@
         display: flex;
         
         @media (max-width: $mobile) {
-            -webkit-flex-direction: column;
-                -ms-flex-direction: column;
-                    flex-direction: column;
+            flex-direction: column;
         }
     }
 
@@ -48,9 +45,7 @@
             align-items: flex-end;
             
             @media (max-width: $mobile) {
-                -webkit-flex-direction: row;
-                    -ms-flex-direction: row;
-                        flex-direction: row;
+                flex-direction: row;
             }
 
             li {
@@ -76,7 +71,7 @@
                     }
                 }
 
-                &.is-active {
+                &.active {
                     a {
                         border-right: 1px solid $black;
                     }

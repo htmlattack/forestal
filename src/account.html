@@ -1,0 +1,47 @@
+@@include('partials/head.html', { "title": "My info — Forestal" })
+@@include('partials/header.html', { "label": "1" })
+
+<div class="account">
+  <div class="wrapper">
+    <aside class="account__sidebar">
+      <nav class="account__nav">
+        <ul>
+          <li>
+            <a href="#myinfo" data-target="#myinfo" data-toggle="tab">My info</a>
+          </li>
+          <li>
+            <a href="#mybikes" data-target="#mybikes" data-toggle="tab">My bikes</a>
+          </li>
+          <li>
+            <a href="#changepwd" data-target="#changepwd" data-toggle="tab">Change password</a>
+          </li>
+          <li>
+            <a href="#orders" data-target="#orders" data-toggle="tab">Orders</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="account__body">
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="myinfo">
+          @@include('page/account/myinfo.html')
+        </div>
+
+        <div class="tab-pane fade" id="mybikes">
+          @@include('page/account/mybikes.html')
+        </div>
+
+        <div class="tab-pane fade" id="changepwd">
+          @@include('page/account/changepwd.html')
+        </div>
+
+        <div class="tab-pane fade" id="orders">
+          @@include('page/account/orders.html')
+        </div>
+      </div>
+    </div>
+
+    @@include('partials/foot.html')
+  </div>
+</div>

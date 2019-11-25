@@ -12,12 +12,23 @@
     position: relative;
   }
 
-  .navbox {
-    position: absolute;
-    top: 0;
-    right: $gutter;
+  &__navbox {
     z-index: 10;
-    
+    position: fixed;
+    top: $header-height + 10;
+    right: 0;
+    left: 0;
+
+    .wrapper {
+      display: flex;
+      justify-content: flex-end;  
+    }
+
+    @at-root .main__navbox .navbox {
+      background: rgba(245,245,245, 0.8);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
+    }
+
     @media (max-width: $mobile) {
       display: none;
     }
