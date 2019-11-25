@@ -1,18 +1,37 @@
 .footer {
+  .wrapper {
+    @media (max-width: $mobile) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
   &__logo {
     display: flex;
     justify-content: center;
 
     margin: 45px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 30px 0;
+    }
 
     svg {
       width: 145px;
       height: 7px;
+      
+      @media (max-width: $mobile) {
+        width: 133px;
+      }
     }
   }
 
   &__text {
     margin: 0 0 90px 0;
+    
+    @media (max-width: $mobile) {
+      padding: 0 40px;
+      margin: 0 0 32px 0;
+    }
 
     p {
       margin: 0;
@@ -20,16 +39,32 @@
       font-size: 13px;
       line-height: 18px;
       color: #999;
+      
+      @media (max-width: $mobile) {
+        font-size: 10px;
+      }
     }
   }
 
   &__navs {
     display: flex;
+    
+    @media (max-width: $mobile) {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+        padding: 0 40px;
+    }
   }
 
   &__nav {
     width: 16.6666667%;
     margin: 0 0 100px 0;
+    
+    @media (max-width: $mobile) {
+      width: 50%;
+      margin-bottom: 40px;
+    }
 
     h5 {
       margin: 0 0 30px 0;
@@ -37,12 +72,20 @@
       font-weight: bold;
       font-size: 13px;
       color: $black;
+      
+      @media (max-width: $mobile) {
+        margin: 0 0 18px 0;
+      }
     }
 
     ul {
       li {
         &:not(:last-child) {
           margin-bottom: 26px;
+          
+          @media (max-width: $mobile) {
+            margin-bottom: 12px;
+          }
         }
 
         a {
@@ -64,23 +107,57 @@
 
     border-top: 1px solid $gray;
     padding: 10px 0;
+    
+    @media (max-width: $mobile) {
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+        padding: 23px 0 50px 0;
+    }
   }
 
   &__copy {
+    @media (max-width: $mobile) {
+      margin-top: 40px;
+      max-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     p {
       margin: 0;
 
       font-size: 13px;
       color: $black;
+      
+      @media (max-width: $mobile) {
+        text-align: center;
+        line-height: 160%;
+      }
     }
   }
 
   &__links {
     margin: 0 35px 0 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0;
+    }
 
     ul {
       display: flex;
       align-items: center;
+      
+      @media (max-width: $mobile) {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 240px;
+      }
 
       li {
         &:not(:last-child) {
@@ -92,10 +169,18 @@
           }
         }
 
+        @media (max-width: $mobile) {
+          line-height: 150%;
+        }
+
         a {
           font-size: 13px;
           color: $black;
           text-decoration: none;
+          
+          @media (max-width: $mobile) {
+            font-size: 12.75px;
+          }
 
           &:hover {
             color: $gray;

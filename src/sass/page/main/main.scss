@@ -17,6 +17,10 @@
     top: 0;
     right: $gutter;
     z-index: 10;
+    
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   &__bike {
@@ -27,6 +31,11 @@
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
+    
+    @media (max-width: $mobile) {
+      top: 0;
+      margin-top: 10px;
+    }
 
     img {
       display: block;
@@ -43,6 +52,13 @@
       color: $dark;
       letter-spacing: 15px;
       text-align: center;
+      
+      @media (max-width: $mobile) {
+        font-size: 15px;
+        letter-spacing: normal;
+        font-weight: bold;
+        margin: 0 0 8px 0;
+      }
     }
 
     p {
@@ -52,6 +68,13 @@
       font-size: 14px;
       color: $dark;
       text-align: center;
+      
+      @media (max-width: $mobile) {
+        max-width: 212px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 136%;
+      }
     }
   }
 
@@ -65,6 +88,10 @@
 
   &__text {
     margin: 140px 0 0 0;
+    
+    @media (max-width: $mobile) {
+      margin: 56px 0 62px 0;
+    }
 
     p {
       margin: 0;
@@ -73,6 +100,10 @@
       font-size: 60px;
       line-height: 100%;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
   }
 }

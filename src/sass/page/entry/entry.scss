@@ -5,6 +5,10 @@
     width: 100%;
     max-width: 1500px;
     margin: 135px auto 40px auto;
+    
+    @media (max-width: $mobile) {
+      margin: 32px auto;
+    }
 
     &__back {
       position: absolute;
@@ -43,12 +47,20 @@
         border-left: 2px solid $black;
 
         transform: rotate(45deg);
+        
+        @media (max-width: $mobile) {
+          right: -2px;
+        }
       }
     }
 
     &__title {
       max-width: 750px;
       margin: 0 0 20px 0;
+      
+      @media (max-width: $mobile) {
+        margin: 0 0 16px 0;
+      }
 
       h1 {
         margin: 0;
@@ -57,6 +69,12 @@
         font-size: 93px;
         line-height: 100%;
         color: $black;
+        
+        @media (max-width: $mobile) {
+          font-size: 32px;
+          padding-top: 40px;
+          color: #333;
+        }
       }
     }
 
@@ -93,6 +111,11 @@
       font-size: 60px;
       line-height: 110%;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 24px;
+        margin: 0 0 16px 0;
+      }
     }
 
     p {
@@ -101,9 +124,19 @@
       font-size: 24px;
       line-height: 40px;
       color: $black;
+      
+      @media (max-width: $mobile) {
+        font-size: 17px;
+        line-height: 155%;
+        margin: 0 0 40px 0;
+      }
 
       &.mb-2x {
         margin-bottom: 100px;
+        
+        @media (max-width: $mobile) {
+          margin-bottom: 50px;
+        }
       }
     }
   }
@@ -116,12 +149,24 @@
     padding: 0 30px;
 
     box-sizing: border-box;
+    
+    @media (max-width: $mobile) {
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-bottom: 10px;
+    }
 
     &__list {
       display: flex;
       flex-wrap: wrap;
 
       margin: 0 -15px;
+      
+      @media (max-width: $mobile) {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
     }
 
     &__col {
@@ -130,15 +175,31 @@
       padding: 0 15px;
 
       box-sizing: border-box;
+      
+      @media (max-width: $mobile) {
+        height: 200px;
+      }
 
       &--half {
         width: 50%;
+        
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
       }
 
       img {
         display: block;
         width: 100%;
         height: auto;
+        
+        @media (max-width: $mobile) {
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden;
+          -webkit-border-radius: 16px;
+                  border-radius: 16px;
+        }
       }
     }
   }

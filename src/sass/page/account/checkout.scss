@@ -4,6 +4,10 @@
 
 	&-heading {
 		margin: 0 0 80px 0;
+		
+		@media (max-width: $mobile) {
+			margin: 0 0 40px 0;
+		}
 
 		h2 {
 			margin: 0 0 5px 0;
@@ -11,6 +15,11 @@
 			font-weight: bold;
 			font-size: 26px;
 			color: $black;
+			
+			@media (max-width: $mobile) {
+				font-size: 20px;
+				margin: 0 0 12px 0;
+			}
 		}
 
 		p {
@@ -20,6 +29,10 @@
 			font-size: 14px;
 			line-height: 110%;
 			color: #666;
+			
+			@media (max-width: $mobile) {
+				line-height: 137%;
+			}
 		}
 	}
 
@@ -29,6 +42,13 @@
 			margin: 0 -10px;
 
 			&--street {
+				@media (max-width: $mobile) {
+					-webkit-flex-direction: column;
+					    -ms-flex-direction: column;
+					        flex-direction: column;
+				    margin-bottom: 20px;
+				}
+
 				.inp-group {
 					width: 100%;
 					padding: 0 10px;
@@ -36,6 +56,11 @@
 					&:last-child {
 						width: 83px;
 						min-width: 83px;
+						
+						@media (max-width: $mobile) {
+							width: auto;
+							margin: initial;
+						}
 					}
 				}
 			}
@@ -57,6 +82,10 @@
 
 		&-row {
 			margin: 0 0 100px 0;
+			
+			@media (max-width: $mobile) {
+				margin: 0 0 64px 0;
+			}
 
 			&--last {
 				margin-bottom: 30px;
@@ -69,12 +98,20 @@
 				font-size: 16px;
 				line-height: 100%;
 				color: $black;
+				
+				@media (max-width: $mobile) {
+					margin: 0 0 30px 0;
+				}
 			}
 		}
 	}
 
 	&-info {
 		margin: 0 0 70px 0;
+		
+		@media (max-width: $mobile) {
+			margin: 0 0 60px 0;
+		}
 
 		ul {
 			li {
@@ -94,6 +131,30 @@
 		.btn-green {
 			width: 100%;
 			max-width: 232px;
+			
+			@media (max-width: $mobile) {
+				max-width: 160px;
+				height: 42px;
+				line-height: 42px;
+				display: block;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.btn-back {
+			@media (max-width: $mobile) {
+				display: none;
+			}
+		}
+	}
+
+	& > .btn-back {
+		@media (max-width: $mobile) {
+			margin-bottom: 24px;
 		}
 	}
 }

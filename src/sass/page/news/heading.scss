@@ -34,23 +34,40 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 );
   }
 
+  @media (max-width: $mobile) {
+    height: 275px;
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
     height: 842px;
+    
+    @media (max-width: $mobile) {
+      height: 100%;
+    }
   }
 
   &__in {
     z-index: 3;
     position: relative;
     margin-bottom: 15%;
+    
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+      padding-bottom: 50px;
+    }
   }
 
   &__title {
     max-width: 750px;
     margin: 0 0 20px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 5px 0;
+    }
 
     h1 {
       margin: 0;
@@ -60,6 +77,10 @@
       line-height: 100%;
       color: $white;
       text-shadow: 0 1px 11px rgba($white, 0.32);
+      
+      @media (max-width: $mobile) {
+        font-size: 23px;
+      }
     }
   }
 
@@ -90,6 +111,10 @@
       font-size: 14px;
       line-height: 140%;
       color: $white;
+      
+      @media (max-width: $mobile) {
+
+      }
     }
   }
 }

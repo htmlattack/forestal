@@ -32,6 +32,10 @@ $(document).ready(function(){
         });
     }
 
+    if ($(window).width() < 1024) {
+        start_news.flickity('destroy');
+    }
+
     var inpdecorate = $('.inp-decorate');
 
     if(inpdecorate.length) {

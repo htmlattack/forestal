@@ -1,6 +1,10 @@
 .orders {
   &-heading {
     margin: 0 0 70px 0;
+    
+    @media (max-width: $mobile) {
+    	margin: 0 0 40px 0;
+    }
 
     h2 {
       margin: 0 0 5px 0;
@@ -38,17 +42,35 @@
       justify-content: space-between;
 
       margin: 0 0 8px 0;
+      
+      @media (max-width: $mobile) {
+      	-webkit-align-items: flex-end;
+      	        align-items: flex-end;
+          margin: 0 0 16px 0;
+      }
 
       &__invoice {
         font-weight: bold;
         font-size: 16px;
         color: $black;
+        
+        @media (max-width: $mobile) {
+        	span {
+        		display: block;
+        	}
+        }
       }
 
       &__summ {
         font-weight: bold;
         font-size: 16px;
         color: $black;
+        
+        @media (max-width: $mobile) {
+        	span {
+        		display: block;
+        	}
+        }
       }
     }
 
@@ -60,8 +82,16 @@
 			border-radius: 16px;
 			box-sizing: border-box;
 			
+			@media (max-width: $mobile) {
+				padding: 24px 20px 20px 20px;
+			}
+			
 			&-list {
 				margin: 0 0 24px 0;
+				
+				@media (max-width: $mobile) {
+					margin: 0 0 20px 0;
+				}
 			}
 
 			&-item {
@@ -72,6 +102,12 @@
 				display: flex;
 				margin: 0 0 -2px 0;
 				padding: 40px 0 0 0;
+				
+				@media (max-width: $mobile) {
+					-webkit-justify-content: space-between;
+					        justify-content: space-between;
+				    margin-top: -16px;
+				}
 
 				&:first-child {
 					padding-top: 0;
@@ -80,6 +116,10 @@
 						&:before {
 							display: none;
 						}
+					}
+
+					@media (max-width: $mobile) {
+						margin-top: 0;
 					}
 				}
 
@@ -104,6 +144,10 @@
 
 					border-radius: 50%;
 					background-color: #d6d6d6;
+					
+					@media (max-width: $mobile) {
+						margin: 0;
+					}
 
 					&:before {
 						content: ' ';
@@ -127,6 +171,12 @@
 					line-height: 100%;
 					white-space: nowrap;
 					color: #454545;
+					
+					@media (max-width: $mobile) {
+						width: calc(100% - 116px);
+						margin: 0;
+						padding-left: 16px;
+					}
 				}
 
 				&__line {
@@ -134,6 +184,10 @@
 
 					height: 12px;
 					border-bottom: 1px solid #e1e1e1;
+					
+					@media (max-width: $mobile) {
+						display: none;
+					}
 				}
 
 				&__date {
@@ -144,6 +198,15 @@
 					color: #454545;
 					white-space: nowrap;
 					text-align: right;
+					
+					@media (max-width: $mobile) {
+						width: 100px;
+						margin: 0;
+						
+						span {
+							display: block;
+						}
+					}
 				}
 			}
 
@@ -158,6 +221,10 @@
 					font-size: 14px;
 					line-height: 150%;
 					color: $black;
+				}
+
+				@media (max-width: $mobile) {
+					margin-left: 0;
 				}
 			}
 		}

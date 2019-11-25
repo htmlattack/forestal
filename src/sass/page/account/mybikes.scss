@@ -8,6 +8,11 @@
 			font-weight: bold;
 			font-size: 26px;
 			color: $black;
+			
+			@media (max-width: $mobile) {
+				font-size: 20px;
+				margin: 0 0 8px 0;
+			}
 		}
 
 		p {
@@ -17,11 +22,19 @@
 			font-size: 14px;
 			line-height: 110%;
 			color: $black;
+			
+			@media (max-width: $mobile) {
+				line-height: 126%;
+			}
 		}
 	}
 
 	&-list {
 		margin-bottom: 90px;
+		
+		@media (max-width: $mobile) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&-item {
@@ -33,10 +46,23 @@
 			border-bottom: 1px solid #e6e6e6;
 		}
 
+		@media (max-width: $mobile) {
+			margin: 0 0 32px 0;
+			padding: 0 0 8px 0;
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+		}
+
 		&__image {
 			width: 100%;
 			max-width: 220px;
 			margin: 0 40px 0 0;
+			
+			@media (max-width: $mobile) {
+				max-width: 100%;
+				margin: 0;
+			}
 
 			img {
 				display: block;
@@ -57,6 +83,15 @@
 
 		&__body {
 			flex-basis: 100%;
+			
+			@media (max-width: $mobile) {
+				display: flex;
+				-webkit-flex-direction: column-reverse;
+				    -ms-flex-direction: column-reverse;
+				        flex-direction: column-reverse;
+				    -webkit-align-items: center;
+				            align-items: center;
+			}
 		}
 
 		&__in {
@@ -66,6 +101,10 @@
 
 			width: 100%;
 			max-width: 330px;
+			
+			@media (max-width: $mobile) {
+				margin-top: 30px;
+			}
 		}
 
 		&__specs {
@@ -99,10 +138,20 @@
 				line-height: 100%;
 				color: #666;
 			}
+
+			&:first-child {
+				@media (max-width: $mobile) {
+					width: 100%;
+				}
+			}
 		}
 
 		&__controls {
 			display: flex;
+			
+			@media (max-width: $mobile) {
+				margin-top: 30px;
+			}
 
 			.btn {
 				margin-right: 8px;
@@ -117,6 +166,10 @@
 			font-size: 20px;
 			line-height: 100%;
 			color: $black;
+			
+			@media (max-width: $mobile) {
+				font-size: 18px;
+			}
 		}
 	}
 }

@@ -2,5 +2,17 @@
     .btn-submit {
         min-width: 232px;
         margin-top: 110px;
+        
+        @media (max-width: $mobile) {
+        	min-width: 160px;
+        	display: block;
+        	margin-left: auto;
+        	margin-right: auto;
+        	height: 42px;
+        	line-height: 42px;
+        	margin-top: 60px;
+        	-webkit-border-radius: 10px;
+        	        border-radius: 10px;
+        }
     }
 }

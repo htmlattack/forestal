@@ -2,16 +2,28 @@
   padding: 50px 0 100px 0;
 
   &__in {
-    .wrapper {
-      display: flex;
-    }
-	}
+	    .wrapper {
+	      display: flex;
+	      
+	      @media (max-width: $mobile) {
+	      	-webkit-flex-direction: column;
+	      	    -ms-flex-direction: column;
+	      	        flex-direction: column;
+	      }
+	    }
+	}	
 	
 	&-photo {
 		width: 50%;
 		padding: 0 110px 0 40px;
 
 		box-sizing: border-box;
+		
+		@media (max-width: $mobile) {
+			width: 100%;
+			padding: 0;
+			margin: 0 0 32px 0;
+		}
 
 		img {
 			display: block;
@@ -25,8 +37,17 @@
 		padding: 0 40px 0 0;
 
 		box-sizing: border-box;
+		
+		@media (max-width: $mobile) {
+			width: 100%;
+			padding: 0;
+		}
 
 		&-title {
+			@media (max-width: $mobile) {
+				margin: 0 0 24px 0;
+			}
+
 			h1 {
 				margin: 0 0 20px 0;
 
@@ -34,6 +55,11 @@
 				font-size: 36px;
 				line-height: 100%;
 				color: $black;
+				
+				@media (max-width: $mobile) {
+					font-size: 24px;
+					margin: 0;
+				}
 			}
 		}
 
@@ -43,6 +69,18 @@
 			font-size: 13px;
 			line-height: 150%;
 			color: $dark;
+			
+			@media (max-width: $mobile) {
+				margin: 0 0 27px 0;
+			}
+			
+			ul {
+				li {
+					@media (max-width: $mobile) {
+						font-size: 13px;
+					}
+				}
+			}
 		}
 	}
 
@@ -60,6 +98,10 @@
 
 		&__list {
 			margin: 0 0 50px 0;
+			
+			@media (max-width: $mobile) {
+				margin: 0 0 40px 0;
+			}
 		}
 
 		&-item {
@@ -90,6 +132,15 @@
 					opacity: 1;
 					visibility: visible;
 				}
+
+				@media (max-width: $mobile) {
+					.customize-select-item__price {
+						&:before {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
 			}
 
 			&__in {
@@ -108,6 +159,10 @@
 				box-sizing: border-box;
 
 				transition: all 200ms ease;
+				
+				@media (max-width: $mobile) {
+					padding: 16px;
+				}
 
 				&:before {
 					content: ' ';
@@ -128,6 +183,10 @@
 
 					transform: rotate(45deg) translate(0,-50%);
 					transition: all 200ms ease;
+					
+					@media (max-width: $mobile) {
+						display: none;
+					}
 				}
 			}
 
@@ -146,6 +205,35 @@
 				font-size: 16px;
 				line-height: 140%;
 				color: $dark;
+				
+				@media (max-width: $mobile) {
+					font-size: 14px;
+					position: relative;
+					
+					&:before {
+						content: ' ';
+
+						opacity: 0;
+						visibility: hidden;
+
+						position: absolute;
+						top: -5px;
+						left: 30px;
+						right: 0;
+						margin-left: auto;
+						margin-right: auto;
+
+						display: block;
+						width: 5px;
+						height: 15px;
+						margin-top: -6px;
+						border-right: 4px solid $green;
+						border-bottom: 4px solid $green;
+
+						transform: translate(0,-100%) rotate(45deg);
+						transition: all 200ms ease;
+					}
+				}
 			}
 		}
 	}
@@ -153,11 +241,29 @@
 	&-foot {
 		border-top: 1px solid #e6e6e6;
 		padding: 10px 0;
+		
+		@media (max-width: $mobile) {
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #FFF;
+			padding: 10px 0 20px 0;
+		}
 
 		.wrapper {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			
+			@media (max-width: $mobile) {
+				position: relative;
+				-webkit-flex-direction: column;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+			    -webkit-align-items: flex-start;
+			            align-items: flex-start;
+			}
 		}
 
 		&__total {
@@ -168,12 +274,31 @@
 			font-size: 36px;
 			line-height: 100%;
 			color: $black;
+			
+			@media (max-width: $mobile) {
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				margin: 0;
+				padding: 0 160px 0 0;
+				font-size: 17px;
+				height: 42px;
+				display: flex;
+				-webkit-align-items: center;
+				        align-items: center;
+			}
 		}
 
 		&__info {
 			width: 100%;
 			max-width: 325px;
 			margin-right: auto;
+			
+			@media (max-width: $mobile) {
+				max-width: 100%;
+				margin-top: 16px;
+			}
 
 			p {
 				margin: 0;
@@ -186,9 +311,24 @@
 
 		&__button {
 			padding: 0 40px 0 0;
+			
+			@media (max-width: $mobile) {
+				padding: 0;
+				position: absolute;
+				top: 0;
+				right: 24px;
+			}
 
 			.btn {
 				min-width: 230px;
+				
+				@media (max-width: $mobile) {
+					-webkit-border-radius: 10px;
+					        border-radius: 10px;
+					min-width: 160px;
+					height: 42px;
+					line-height: 42px;
+				}
 			}
 		}
 	}

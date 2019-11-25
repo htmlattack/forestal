@@ -8,6 +8,12 @@
 			font-weight: bold;
 			font-size: 26px;
 			color: $black;
+			
+			@media (max-width: $mobile) {
+				font-size: 20px;
+				
+				margin: 0 0 12px 0;
+			}
 		}
 
 		p {
@@ -29,15 +35,35 @@
 			width: 100%;
 			max-width: 230px;
 			margin-top: 40px;
+			
+			@media (max-width: $mobile) {
+				display: block;
+				margin-top: 20px;
+				width: 160px;
+				min-width: 160px;
+				max-width: 230px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 
 	&-error {
+		@media (max-width: $mobile) {
+			max-width: 210px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		p {
 			margin: 0;
 
 			font-size: 14px;
 			color: $red;
+			
+			@media (max-width: $mobile) {
+				text-align: center;
+			}
 		}
 	}
 }

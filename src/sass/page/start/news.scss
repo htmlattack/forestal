@@ -2,9 +2,18 @@
   $this: &;
 
   padding: 60px 0 100px 0;
+  
+  @media (max-width: $mobile) {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
 
   &__heading {
     margin: 0 0 50px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 24px 0;
+    }
 
     h2 {
       margin: 0;
@@ -12,6 +21,10 @@
       font-weight: bold;
       font-size: 60px;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 21px;
+      }
     }
 
     p {
@@ -21,6 +34,11 @@
       font-size: 14px;
       line-height: 150%;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        line-height: 140%;
+        max-width: 100%;
+      }
     }
   }
 
@@ -34,6 +52,11 @@
     .news-card__item {
       width: calc(33.3333333% - 25px);
       margin: 0 20px;
+      
+      @media (max-width: $mobile) {
+        width: 100%;
+        margin: 0 0 24px 0;
+      }
     }
   }
 }
