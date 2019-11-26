@@ -1,6 +1,8 @@
 .btn {
   $this: &;
 
+  box-sizing: border-box;
+
   &-green {
     display: inline-flex;
     justify-content: center;
@@ -16,6 +18,8 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 150%;
+    color: $black;
+    text-decoration: none;
     text-align: center;
     
     transition: all 200ms ease;
@@ -40,6 +44,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 150%;
+    text-decoration: none;
     text-align: center;
     
     transition: all 200ms ease;

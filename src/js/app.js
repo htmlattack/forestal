@@ -90,4 +90,63 @@ $(document).ready(function(){
         navigator.userAgent.indexOf('Chrome') == -1) {
         document.body.className += "safari";
     }
+
+
+    // Account sidebar
+    var account_nav = $('.account__nav');
+    var hash = document.location.hash;
+
+    function accountNavActive() {
+        var active = account_nav.find('.active');
+        var activePos = active.position().top;
+        var activeHeight = active.height();
+
+        $('.account__nav-line').css({
+            top: activePos,
+            height: activeHeight
+        });
+    }
+
+    if(account_nav.length) {
+        account_nav.append('<div class="account__nav-line"></div>');
+
+        if(hash) {
+            account_nav.find('a[href="'+hash+'"]').tab('show');
+        } 
+
+        accountNavActive();
+
+        account_nav.find('a').on('shown.bs.tab', function(e) {
+            accountNavActive();
+        });
+    }
+
+
+    // Tabs
+    var tabs = $('.tabs');
+
+    function tabsNavActive(item) {
+        var active = item.find('.active');
+        var activePos = active.position().left;
+        var activeWidth = active.width();
+
+        item.find('.tabs__nav-line').css({
+            left: activePos,
+            width: activeWidth
+        });
+    }
+
+    if(tabs.length) {
+        tabs.each(function(){
+            var tab = $(this).find('.tabs__nav');
+
+            tab.append('<div class="tabs__nav-line"></div>');
+
+            tabsNavActive(tab);
+
+            tab.find('a').on('shown.bs.tab', function(e) {
+                tabsNavActive(tab);
+            });
+        });
+    }
 });

@@ -423,4 +423,35 @@ $cart-sum-width: 10%;
 			}
 		}
 	}
+
+
+	// Empty
+	&-empty {
+		text-align: center;
+
+		h2 {
+			margin: 0 0 30px 0;
+
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 100%;
+			color: $black;
+		}
+
+		p {
+			margin: 0 0 70px 0;
+			padding: 130px 0 0 0;
+
+			background: url(../images/cart/bag-empty.png) center top no-repeat;
+			background-size: 92px auto;
+
+			font-size: 14px;
+			line-height: 140%;
+			color: #666;
+		}
+
+		.btn {
+			min-width: 232px;
+		}
+	}
 }

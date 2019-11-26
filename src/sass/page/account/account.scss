@@ -5,7 +5,7 @@
         padding: 32px 0;
     }
     
-    &__center {
+    &--center {
         display: flex;
         justify-content: center;
             
@@ -39,6 +39,20 @@
         position: sticky;
         top: 0;
 
+        &-line {
+            position: absolute;
+            top: 0;
+            right: -1px;
+
+            display: block;
+            width: 1px;
+            height: 0;
+
+            background-color: $black;
+
+            transition: all 200ms ease-in-out
+        }
+
         ul {
             display: flex;
             flex-direction: column;
@@ -54,8 +68,6 @@
                     align-items: center;
 
                     height: 52px;
-                    border-right: 1px solid transparent;
-                    margin: 0 -1px 0 0;
                     padding: 0 12px 0 0;
 
                     font-size: 18px;
@@ -68,12 +80,6 @@
 
                     @media (max-width: $mobile) {
                         font-size: 13px;
-                    }
-                }
-
-                &.active {
-                    a {
-                        border-right: 1px solid $black;
                     }
                 }
             }

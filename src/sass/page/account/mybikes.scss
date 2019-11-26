@@ -82,6 +82,10 @@
 		}
 
 		&__body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
 			flex-basis: 100%;
 			
 			@media (max-width: $mobile) {
@@ -91,6 +95,10 @@
 				        flex-direction: column-reverse;
 				    -webkit-align-items: center;
 				            align-items: center;
+			}
+
+			.btn--mini {
+				min-width: 60px;
 			}
 		}
 
@@ -104,6 +112,29 @@
 			
 			@media (max-width: $mobile) {
 				margin-top: 30px;
+			}
+		}
+
+		&__text {
+			h3 {
+				margin: 0 0 20px 0;
+
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 110%;
+				color: $black;
+			}
+
+			p {
+				margin: 0 0 20px 0;
+
+				font-size: 14px;
+				line-height: 140%;
+				color: #666;
+			}
+
+			h3 + p {
+				margin-top: -15px;
 			}
 		}
 
