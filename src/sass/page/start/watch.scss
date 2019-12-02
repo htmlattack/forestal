@@ -59,6 +59,10 @@
       
       @media (max-width: $mobile) {
         font-size: 23px;
+        
+        br {
+          display: none;
+        }
       }
     }
 

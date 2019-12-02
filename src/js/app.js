@@ -149,4 +149,9 @@ $(document).ready(function(){
             });
         });
     }
+
+    $('.header__burger').on('click', function(){
+        $(this).toggleClass('is-animated');
+        $('body').toggleClass('menu--opened');
+    });
 });

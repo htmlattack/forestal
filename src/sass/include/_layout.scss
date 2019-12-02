@@ -9,6 +9,15 @@ body {
     
   font-family: $sans;
   font-size: 14px;
+  
+  @media (max-width: $mobile) {
+    padding-top: 60px;
+  }
+}
+
+html {
+  -ms-overflow-x: hidden;
+      overflow-x: hidden;
 }
 
 ul {
@@ -116,6 +125,16 @@ svg.icon {
   justify-content: center;
 
   width: 35px;
+  
+  @media (max-width: $mobile) {
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+      min-width: 35px;
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+  }
 
   &__plus {
     position: relative;
@@ -123,6 +142,15 @@ svg.icon {
     height: 15px;
 
     text-indent: -9999px;
+    
+    @media (max-width: $mobile) {
+      transform: none;
+      transform-origin: center;
+      opacity: 1;
+      display: block;
+      height: 21px;
+      line-height: 21px;
+    }
 
     &:before {
       content: ' ';
@@ -140,6 +168,20 @@ svg.icon {
       border-left: 2px solid $dark;
 
       transform: rotate(45deg);
+      
+      @media (max-width: $mobile) {
+        transform: none;
+        border: none;
+        width: 4px;
+        height: 8px;
+        background: url('../images/icons/next.svg') center center no-repeat;
+        -webkit-background-size: contain;
+             -o-background-size: contain;
+                background-size: contain;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
     }
   }
 
@@ -155,6 +197,10 @@ svg.icon {
     font-size: 16px;
     color: $black;
     text-align: center;
+    
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
   }
 
   &__minus {
@@ -163,6 +209,13 @@ svg.icon {
     height: 15px;
 
     text-indent: -9999px;
+    
+    @media (max-width: $mobile) {
+      transform-origin: center;
+      opacity: 1;
+      height: 21px;
+      line-height: 21px;
+    }
 
     &:before {
       content: ' ';
@@ -180,6 +233,19 @@ svg.icon {
       border-bottom: 2px solid $dark;
 
       transform: rotate(45deg);
+      
+      @media (max-width: $mobile) {
+        transform: none;
+        border: none;
+        width: 4px;
+        height: 8px;
+        background: url('../images/icons/prev.svg') center center no-repeat;
+        -webkit-background-size: contain;
+             -o-background-size: contain;
+                background-size: contain;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
     }
   }
 }

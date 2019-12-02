@@ -10,6 +10,13 @@
       justify-content: center;
 
       height: 500px;
+      
+      @media (max-width: $mobile) {
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        font-weight: normal;
+      }
     }
 
     h2 {
@@ -18,6 +25,11 @@
       font-size: 100px;
       color: $black;
       letter-spacing: 1px;
+      
+      @media (max-width: $mobile) {
+        font-size: 31px;
+        margin-bottom: 10px;
+      }
     }
 
     p {
@@ -29,6 +41,11 @@
       font-size: 24px;
       line-height: 130%;
       color: $black;
+      
+      @media (max-width: $mobile) {
+        font-size: 13px;
+        margin: 0 0 40px 0;
+      }
     }
 
     .btn-watch {
@@ -41,6 +58,11 @@
       font-weight: bold;
       font-size: 24px;
       color: $black;
+      
+      @media (max-width: $mobile) {
+        position: static;
+        font-size: 13px;
+      }
 
       &:hover {
         color: $dark;
@@ -55,6 +77,10 @@
 
         font-size: 30px;
         fill: currentColor;
+        
+        @media (max-width: $mobile) {
+          font-size: 14px;
+        }
       }
     }
   }

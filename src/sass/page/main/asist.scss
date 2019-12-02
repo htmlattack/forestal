@@ -1,8 +1,16 @@
 .main-asist {
   padding: 240px 0 110px 0;
+  
+  @media (max-width: $mobile) {
+    padding: 0px 0 100px 0;
+  }
 
   &__heading {
     margin: 0 0 75px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 24px 0;
+    }
 
     h2 {
       margin: 0;
@@ -10,6 +18,10 @@
       font-weight: bold;
       font-size: 60px;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
 
     p {
@@ -18,11 +30,19 @@
       font-weight: bold;
       font-size: 24px;
       color: $green;
+      
+      @media (max-width: $mobile) {
+        font-size: 13px;
+      }
     }
   }
 
   &__text {
     margin: 0 0 170px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 100px 0;
+    }
 
     p {
       margin: 0;
@@ -31,6 +51,10 @@
       font-size: 60px;
       line-height: 105%;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
   }
 

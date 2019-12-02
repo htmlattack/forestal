@@ -26,6 +26,12 @@
   &__nav {
     position: relative;
     margin: 0 0 50px 0;
+    
+    @media (max-width: $mobile) {
+      display: flex;
+      -webkit-justify-content: center;
+              justify-content: center;
+    }
 
     ul {
       display: inline-flex;
@@ -71,5 +77,14 @@
   }
 
   &__content {
+  }
+}
+
+.tab-content {
+  @media (max-width: $mobile) {
+    #orders .cart-item__qty {
+      text-align: center;
+      left: -10px;
+    }
   }
 }

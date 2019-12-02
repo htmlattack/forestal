@@ -95,6 +95,28 @@
 				        flex-direction: column-reverse;
 				    -webkit-align-items: center;
 				            align-items: center;
+				    margin-bottom: 32px;
+			}
+
+			&-controls {
+				@media (max-width: $mobile) {
+					-webkit-flex-direction: column;
+					    -ms-flex-direction: column;
+					        flex-direction: column;
+				    margin-top: 32px;
+				    -webkit-align-items: flex-start;
+				            align-items: flex-start;
+				    
+				    .mybikes-item__controls {
+				    	margin-top: 16px;
+				    }
+
+				    .mybikes-item__text {
+				    	p {
+				    		margin-bottom: 0;
+				    	}
+				    }
+				}
 			}
 
 			.btn--mini {

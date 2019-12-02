@@ -1,8 +1,16 @@
 .main-suspension {
   padding: 210px 0 140px 0;
+  
+  @media (max-width: $mobile) {
+    padding: 95px 0 40px 0;
+  }
 
   &__heading {
     margin: 0 0 75px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 24px 0;
+    }
 
     h2 {
       margin: 0;
@@ -10,6 +18,10 @@
       font-weight: bold;
       font-size: 60px;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
 
     p {
@@ -18,11 +30,19 @@
       font-weight: bold;
       font-size: 24px;
       color: $green;
+      
+      @media (max-width: $mobile) {
+        font-size: 13px;
+      }
     }
   }
 
   &__text {
     margin: 0 0 170px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 80px 0;
+    }
 
     p {
       margin: 0;
@@ -31,11 +51,19 @@
       font-size: 60px;
       line-height: 105%;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
   }
 
   &__image {
     margin: 0 0 140px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 64px 0;
+    }
 
     img {
       display: block;
@@ -46,6 +74,10 @@
 
   &__text2 {
     margin: 160px 0 120px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 24px 0 80px 0;
+    }
 
     p {
       margin: 0;
@@ -54,11 +86,19 @@
       font-size: 60px;
       line-height: 105%;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
   }
 
   &__image2 {
     margin: 0 0 200px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 64px 0;
+    }
 
     img {
       display: block;

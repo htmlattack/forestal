@@ -1,8 +1,16 @@
 .main-application {
   padding: 110px 0 220px 0;
+  
+  @media (max-width: $mobile) {
+  	padding: 0 0 100px 0;
+  }
 
   &__heading {
     margin: 0 0 75px 0;
+    
+    @media (max-width: $mobile) {
+    	margin: 0 0 20px 0;
+    }
 
     h2 {
       margin: 0;
@@ -10,6 +18,10 @@
       font-weight: bold;
       font-size: 60px;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+      	font-size: 20px;
+      }
     }
 
     p {
@@ -18,11 +30,19 @@
       font-weight: bold;
       font-size: 24px;
       color: $green;
+      
+      @media (max-width: $mobile) {
+      	font-size: 13px;
+      }
     }
   }
 
   &__text {
     margin: 0 0 170px 0;
+    
+    @media (max-width: $mobile) {
+    	margin: 0 0 100px 0;
+    }
 
     p {
       margin: 0;
@@ -31,6 +51,10 @@
       font-size: 60px;
       line-height: 105%;
       color: $dark;
+      
+      @media (max-width: $mobile) {
+      	font-size: 20px;
+      }
     }
   }
 
@@ -41,6 +65,10 @@
   &__features {
 		width: 50%;
 		padding: 25px 0 0 0;
+		
+		@media (max-width: $mobile) {
+			padding: 0;
+		}
 
     ul {
       li {
@@ -52,6 +80,10 @@
 				font-size: 60px;
 				color: $dark;
         text-align: right;
+        
+        @media (max-width: $mobile) {
+        	font-size: 20px;
+        }
       }
     }
   }
@@ -67,6 +99,10 @@
 			width: 100%;
 			height: auto;
 			margin: 0 0 95px 0;
+			
+			@media (max-width: $mobile) {
+				margin: 0 0 24px 0;
+			}
 		}
 	}
 	
@@ -78,6 +114,10 @@
 
 				background: url(../images/icons/appstore-g.png) no-repeat;
 				background-size: 100% auto;
+				
+				@media (max-width: $mobile) {
+					width: 70px;
+				}
 			}
 		}
 
@@ -88,12 +128,22 @@
 
 				background: url(../images/icons/googleplay-g.png) 0 3px no-repeat;
 				background-size: 100% auto;
+				
+				@media (max-width: $mobile) {
+					width: 75px;
+				}
 			}
 		}
 
 		ul {
 			display: flex;
 			justify-content: center;
+			
+			@media (max-width: $mobile) {
+				-webkit-flex-direction: column;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+			}
 
 			li {
 				&:not(:last-child) {

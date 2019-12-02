@@ -1,8 +1,16 @@
 .main-motor {
 	padding: 210px 0 0 0;
+  
+  @media (max-width: $mobile) {
+    padding: 80px 0 0 0;
+  }
 	
   &__heading {
     margin: 0 0 75px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 24px 0;
+    }
 
     h2 {
       margin: 0;
@@ -10,6 +18,10 @@
       font-weight: bold;
       font-size: 60px;
       color: $white;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
 
     p {
@@ -18,11 +30,19 @@
       font-weight: bold;
       font-size: 24px;
       color: $green;
+      
+      @media (max-width: $mobile) {
+        font-size: 13px;
+      }
     }
   }
 
   &__text {
     margin: 0 0 220px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 80px 0;
+    }
 
     p {
       margin: 0;
@@ -31,11 +51,19 @@
       font-size: 60px;
       line-height: 105%;
       color: $white;
+      
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
   }
 
   &__image {
     margin: 0 0 100px 0;
+    
+    @media (max-width: $mobile) {
+      margin: 0 0 10px 0;
+    }
 
     img {
       display: block;
@@ -46,6 +74,10 @@
 
   .specs {
     margin-bottom: 150px;
+    
+    @media (max-width: $mobile) {
+      margin-bottom: 80px;
+    }
   }
 
   &-box {
@@ -55,23 +87,43 @@
     align-items: center;
 
     margin: 0 0 95px 0;
+    
+    @media (max-width: $mobile) {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+    }
 
     &--reverse {
       flex-direction: row-reverse;
 
       #{$this}__image {
         margin: 0 0 0 10%;
+        
+        @media (max-width: $mobile) {
+          margin: 0;
+        }
       }
 
       #{$this}__text {
         justify-content: flex-end;
         text-align: right;
+        
+        @media (max-width: $mobile) {
+          text-align: left;
+        }
       }
     }
 
     &__image {
       width: 40%;
       margin: 0 10% 0 0;
+      
+      @media (max-width: $mobile) {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 24px;
+      }
 
       img {
         display: block;
@@ -83,6 +135,11 @@
     &__text {
       display: flex;
       width: 50%;
+      
+      @media (max-width: $mobile) {
+        width: 100%;
+        padding: 0 24px;
+      }
 
       p {
         width: 100%;
@@ -92,6 +149,11 @@
         font-size: 50px;
         line-height: 105%;
         color: $white;
+        
+        @media (max-width: $mobile) {
+          font-size: 20px;
+          margin-top: 32px;
+        }
       }
     }
   }

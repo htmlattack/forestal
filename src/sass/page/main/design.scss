@@ -58,6 +58,7 @@
       
       @media (max-width: $mobile) {
         bottom: 16px;
+        font-size: 13px;
       }
 
       &:hover {
@@ -73,6 +74,10 @@
 
         font-size: 30px;
         fill: currentColor;
+        
+        @media (max-width: $mobile) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -113,6 +118,10 @@
 
       & + img {
         margin-top: 24px;
+        
+        @media (max-width: $mobile) {
+          margin-top: 0;
+        }
       }
     }
 
@@ -121,6 +130,25 @@
       padding: 0 12px 24px 0;
 
       box-sizing: border-box;
+      
+      @media (max-width: $mobile) {
+        width: 100%;
+        display: flex;
+        padding-right: 0;
+        padding-bottom: 9px;
+        
+        img {
+          width: 50%;
+          
+          &:first-child {
+            padding-right: 4.5px;
+          }
+
+          &:last-child {
+            padding-left: 4.5px;
+          }
+        }
+      }
     }
 
     &--right {
@@ -128,10 +156,27 @@
       padding: 0 0 24px 12px;
 
       box-sizing: border-box;
+      
+      @media (max-width: $mobile) {
+        width: 100%;
+        padding: 0 0 9px 0;
+        
+        img {
+          height: 208px;
+        }
+      }
     }
 
     &--bottom {
       width: 100%;
+      
+      @media (max-width: $mobile) {
+        height: 208px;
+        
+        img {
+          height: 100%;
+        }
+      }
     }
   }
 }

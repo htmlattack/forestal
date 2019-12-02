@@ -7,6 +7,67 @@
 
   background-color: $white;
   
+  &__burger {
+    width: 24px;
+    height: 24px;
+    margin-right: 32px;
+    display: none;
+    position: relative;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-left: -6px;
+    
+    @media (max-width: $mobile) {
+      display: flex;
+    }
+    
+    &.is-animated {
+      i {
+        top: 2px;
+        transform: rotate(135deg);
+        
+        &:last-child {
+          top: 2px;
+          width: 12px;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+    
+    &:hover {
+      cursor: pointer;
+    }
+    
+    &-in {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 0;
+      right: 0;
+      width: 12px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 5px;
+    }
+    
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      height: 1px;
+      width: 12px;
+      background: #4A4A4A;
+      transition: all 0.4s;
+      
+      &:last-child {
+        width: 9px;
+        top: 4px;
+      }
+    }
+  }
+  
   @media (max-width: $mobile) {
     background: #FDFDFD;
   }
@@ -31,6 +92,12 @@
       @media (max-width: $mobile) {
         width: 87px;
       }
+    }
+
+    @media (max-width: $mobile) {
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
     }
   }
 

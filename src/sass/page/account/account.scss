@@ -2,7 +2,7 @@
     padding: 65px 0;
     
     @media (max-width: $mobile) {
-        padding: 32px 0;
+        padding: 11px 0 32px 0;
     }
     
     &--center {
@@ -30,14 +30,62 @@
         border-right: 1px solid $green;
         
         @media (max-width: $mobile) {
-            width: 100%;
-            margin: 0 0 32px 0;
+            width: auto;
+            
+            margin: 0 -24px 32px -24px;
+            border-right: none;
+            position: relative;
+            
+            &:after {
+                position: absolute;
+                content: ' ';
+                left: 24px;
+                right: 24px;
+                bottom: 0;
+                height: 1px;
+                background: rgba(0,0,0,0.1);
+            }
+            
+            &::-webkit-scrollbar {
+              display: none;
+            }
+             
+            &::-webkit-scrollbar-track {
+              display: none;
+            }
+             
+            &::-webkit-scrollbar-thumb {
+              display: none;
+            }
         }
     }
 
     &__nav {
         position: sticky;
         top: 0;
+        
+        @media (max-width: $mobile) {
+            padding-left: 24px;
+            border-right: none;
+            padding-bottom: 16px;
+            padding-right: 10px;
+            position: static;
+            white-space: nowrap;
+            -ms-overflow-x: auto;
+                overflow-x: auto;
+            
+            &::-webkit-scrollbar {
+              display: none;
+            }
+             
+            &::-webkit-scrollbar-track {
+              display: none;
+            }
+             
+            &::-webkit-scrollbar-thumb {
+              display: none;
+            }
+        }
 
         &-line {
             position: absolute;
@@ -50,7 +98,11 @@
 
             background-color: $black;
 
-            transition: all 200ms ease-in-out
+            transition: all 200ms ease-in-out;
+            
+            @media (max-width: $mobile) {
+                display: none;
+            }
         }
 
         ul {
@@ -60,9 +112,17 @@
             
             @media (max-width: $mobile) {
                 flex-direction: row;
+                    white-space: nowrap;
+                    white-space: nowrap;
             }
 
             li {
+
+                @media (max-width: $mobile) {
+                    text-align: center;
+                    margin-right: 8px;
+                }
+
                 a {
                     display: flex;
                     align-items: center;
@@ -79,7 +139,26 @@
                     }
 
                     @media (max-width: $mobile) {
+                        color: rgba(0,0,0,0.5);
+                        transition: all 0.4s;
+                        
                         font-size: 13px;
+                        padding: 0 8px;
+                        height: 32px;
+                        line-height: 32px;
+                        -webkit-border-radius: 12px;
+                                border-radius: 12px;
+                        text-align: center;
+                        
+                    }
+                }
+
+                &.active {
+                    a {
+                        @media (max-width: $mobile) {
+                            background: $green;
+                            color: $black;
+                        }
                     }
                 }
             }

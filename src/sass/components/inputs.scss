@@ -56,6 +56,10 @@
 
   & + & {
     margin-left: 40px;
+    
+    @media (max-width: 340px) {
+      margin-left: 20px;
+    }
   }
 }
 

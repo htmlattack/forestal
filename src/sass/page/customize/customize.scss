@@ -1,5 +1,9 @@
 .customize {
   padding: 50px 0 100px 0;
+  
+  @media (max-width: $mobile) {
+  	padding-top: 24px;
+  }
 
   &__in {
 	    .wrapper {
@@ -197,6 +201,10 @@
 				font-size: 16px;
 				line-height: 140%;
 				color: $dark;
+				
+				@media (max-width: $mobile) {
+					font-size: 14px;
+				}
 			}
 
 			&__price {

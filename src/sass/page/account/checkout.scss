@@ -1,6 +1,8 @@
 .checkout {
 	width: 100%;
 	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
 
 	&-heading {
 		margin: 0 0 80px 0;
@@ -37,6 +39,11 @@
 	}
 
 	&-form {
+		label {
+			@media (max-width: 340px) {
+				font-size: 12px;
+			}
+		}
 		.inp-row {
 			display: flex;
 			margin: 0 -10px;
@@ -71,10 +78,38 @@
 				.inp-group {
 					width: 100%;
 					padding: 0 15px;
+					
+					@media (max-width: 340px) {
+						width: 33.33%;
+						-webkit-box-sizing: border-box;
+						   -moz-box-sizing: border-box;
+						        box-sizing: border-box;
+						    
+						    input {
+						    	-webkit-box-sizing: border-box;
+						    	   -moz-box-sizing: border-box;
+						    	        box-sizing: border-box;
+						    }
+					}
 
 					&:first-child {
 						width: 110px;
 						min-width: 110px;
+						
+						@media (max-width: 340px) {
+							width: 33.33%;
+							min-width: 33.33%;
+						}
+					}
+
+					label {
+						@media (max-width: $mobile) {
+							white-space: nowrap;
+						}
+
+						@media (max-width: 340px) {
+							font-size: 12px;
+						}
 					}
 				}
 			}
@@ -142,6 +177,8 @@
 				        box-sizing: border-box;
 				margin-left: auto;
 				margin-right: auto;
+				-webkit-border-radius: 10px;
+				        border-radius: 10px;
 			}
 		}
 
