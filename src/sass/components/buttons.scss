@@ -107,4 +107,60 @@
     font-weight: normal;
     font-size: 12px;
   }
+
+  &-fb {
+    display: block;
+    width: 54px;
+    height: 54px;
+    background: url('../images/icons/ico-fb.png') center center no-repeat;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    transition: all 200ms ease;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: $mobile) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  & + .btn-fb {
+    margin-left: 10px;
+    
+    @media (max-width: $mobile) {
+      margin-left: 16px;
+    }
+  }
+
+  &-apple_pay {
+    width: 125px;
+    background: #E9E9E9 url('../images/icons/ico-apple-pay.png') center center no-repeat;
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+  }
+
+  &-succes {
+    font-size: 14px;
+    padding-right: 19px;
+    position: relative;
+    margin-top: 30px;
+    
+    &:after {
+      position: absolute;
+      content: ' ';
+      right: 0;
+      top: 0;
+      width: 11px;
+      height: 11px;
+      background: url('../images/icons/check.svg') right center no-repeat;
+      -webkit-background-size: 11px 11px;
+           -o-background-size: 11px 11px;
+              background-size: 11px 11px;
+    }
+  }
 }

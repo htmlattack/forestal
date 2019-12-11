@@ -224,5 +224,53 @@
 				font-size: 18px;
 			}
 		}
+
+		&__qrs {
+			display: flex;
+			margin-top: 50px;
+			
+			@media (max-width: $tablet) {
+				display: none;
+			}
+		}
+
+		&__qr {
+			width: 97px;
+			margin-right: 85px;
+			
+			img {
+				display: block;
+				width: 100%;
+			}
+
+			&-logo {
+				width: 61px;
+				margin-left: auto;
+				margin-right: auto;
+				height: auto;
+				
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			&-link {
+				display: block;
+				margin-top: 25px;
+				text-align: center;
+				
+				a {
+					font-size: 15px;
+					color: $green;
+					font-weight: bold;
+					transition: all 0.4s;
+					
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
 	}
 }

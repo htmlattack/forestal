@@ -87,9 +87,10 @@ $cart-sum-width: 10%;
 		$this: &;
 
 		position: relative;
-		padding: 10px 20px 10px 20px;
+		padding: 12px 20px 12px 12px;
 
-		background-color: #f9f9f9;
+		background-color: #fff;
+		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.06);
 		border-radius: 16px;
 
 		&:not(:last-child) {
@@ -128,21 +129,43 @@ $cart-sum-width: 10%;
 		&__image {
 			display: flex;
 			justify-content: center;
+			-webkit-align-items: center;
+			        align-items: center;
 
 			width: $cart-image-width;
-			padding: 0 20px 0 0;
+			margin: 0 20px 0 0;
 
 			box-sizing: border-box;
+			position: relative;
+			-webkit-border-radius: 6px;
+			        border-radius: 6px;
+			overflow: hidden;
+			background: #FFF;
+			
+			&:after {
+				height: 0;
+				content: ' ';
+				padding-bottom: 100%;
+			}
 			
 			@media (max-width: $mobile) {
-				width: 67px;
-				height: 47px;
+				
 			}
 
 			img {
 				display: block;
 				width: 100%;
-				height: auto;
+				height: 100%;
+				padding: 10px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				position: absolute;
+				object-fit: contain;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
 				
 				@media (max-width: $mobile) {
 					height: 100%;
@@ -158,7 +181,7 @@ $cart-sum-width: 10%;
 			width: $cart-info-width;
 			
 			@media (max-width: $mobile) {
-				width: calc(100% - 67px);
+				width: calc(80% - 20px);
 				position: relative;
 			}
 
@@ -188,6 +211,10 @@ $cart-sum-width: 10%;
 
 				&:hover {
 					color: $green;
+					
+					@media (max-width: $mobile) {
+						color: inherit;
+					}
 				}
 			}
 
@@ -212,10 +239,14 @@ $cart-sum-width: 10%;
 			line-height: 100%;
 			
 			@media (max-width: $mobile) {
-				width: calc(60% - 67px);
+				width: 40%;
 				margin-top: 12px;
 				order: 2;
 				text-align: left;
+				padding-left: 20px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
 			}
 		}
 
@@ -227,9 +258,9 @@ $cart-sum-width: 10%;
 			line-height: 100%;
 			
 			@media (max-width: $mobile) {
-				text-align: left;
+				width: 20%;
+				text-align: center;
 				position: relative;
-				left: -9px;
 			}
 
 			.qty__plus,
@@ -249,7 +280,6 @@ $cart-sum-width: 10%;
 				-webkit-box-sizing: border-box;
 				   -moz-box-sizing: border-box;
 				        box-sizing: border-box;
-				width: 67px;
 				
 				span {
 					&.visible-xs {
@@ -282,13 +312,26 @@ $cart-sum-width: 10%;
 			font-size: 10px;
 			line-height: 18px;
 			color: $black;
+			
+			ul {
+				li {
+					@media (max-width: $mobile) {
+						font-size: 13px;
+						margin-bottom: 5px;
+						
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
 		}
 
 		&__remove {
 			opacity: 0;
 			position: absolute;
 			top: 10px;
-			right: 10px;
+			right: 16px;
 
 			display: block;
 			width: 20px;
@@ -366,7 +409,7 @@ $cart-sum-width: 10%;
 		justify-content: space-between;
 		align-items: center;
 
-		padding: 20px;
+		padding: 20px 20px 20px 12px;
 		
 		@media (max-width: $mobile) {
 			padding-left: 0;
@@ -375,7 +418,7 @@ $cart-sum-width: 10%;
 
 		&__total {
 			width: $cart-price-width;
-			margin-left: $cart-image-width + $cart-info-width;
+			margin-left: calc(40% + 10px);
 
 			box-sizing: border-box;
 

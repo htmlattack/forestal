@@ -1,5 +1,5 @@
 .auth {
-	height: calc(100vh - #{$header-height});
+	min-height: initial;
 
 	.wrapper {
 		position: relative;
@@ -26,13 +26,17 @@
 			
 			justify-content: flex-start;
 		}
+
+		@media (max-width: $mobile)  {
+			position: static;
+		}
 	}
 
 	&-heading {
 		margin: 0 0 40px 0;
 		
 		@media (max-width: $mobile) {
-			margin: 0 0 48px 0;
+			margin: 0px 0 48px 0;
 		}
 
 		h2 {

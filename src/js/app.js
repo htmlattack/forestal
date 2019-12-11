@@ -150,8 +150,23 @@ $(document).ready(function(){
         });
     }
 
+    var url = document.location.toString();
+
+    if (url.match('#')) {
+        $('.account__nav a[href="#' + url.split('#')[1] + '"]').tab('show');
+    } 
+
+    // Change hash for page-reload
+    $('.account__nav a').on('shown.bs.tab', function (e) {
+        window.location.hash = e.target.hash;
+    })
+
     $('.header__burger').on('click', function(){
         $(this).toggleClass('is-animated');
         $('body').toggleClass('menu--opened');
+    });
+
+    $('.cookie .btn').on('click', function(){
+        $(this).closest('.cookie').hide();
     });
 });
