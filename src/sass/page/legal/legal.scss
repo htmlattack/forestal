@@ -1,0 +1,36 @@
+.legal {
+	max-width: 610px;
+	margin: 70px auto 0 auto;
+	
+	@media (max-width: $mobile) {
+		margin: 40px auto 0 auto;
+	}
+	
+	&__headline {
+		margin-top: 54px;
+		
+		@media (max-width: $mobile) {
+			margin-top: 38px;
+		}
+		
+		h5 {
+			margin: 0 0 17px 0;
+			font-size: 24px;
+			font-weight: bold;
+			color: #000;
+			
+			@media (max-width: $mobile) {
+				font-size: 26px;
+			}
+		}
+	}
+
+	&__content {
+		p {
+			margin: 0;
+			font-size: 17px;
+			font-weight: normal;
+			line-height: 213%;
+		}
+	}
+}
