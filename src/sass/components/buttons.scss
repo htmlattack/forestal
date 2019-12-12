@@ -45,12 +45,14 @@
     font-size: 14px;
     line-height: 150%;
     text-decoration: none;
+    color: $dark;
     text-align: center;
     
     transition: all 200ms ease;
 
     &:hover {
       background-color: lighten($green, 3);
+      color: $black;
     }
   }
 

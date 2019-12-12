@@ -4,6 +4,13 @@
 @import "include/fonts";
 @import 'include/layout';
 
+
+// Libs
+@import "libs/flickity";
+@import "libs/jquery.formstyler";
+@import "libs/jquery.formstyler.theme";
+@import "libs/jquery-ui.structure";
+
 // Partials
 @import "partials/header";
 @import "partials/footer";
@@ -28,6 +35,7 @@
 @import "components/navbox";
 @import "components/buttons";
 @import "components/inputs";
+@import "components/datepicker";
 
 // Start
 @import "page/start/slider";
@@ -61,12 +69,10 @@
 // Customize
 @import "page/customize/customize";
 
+// Contacts
+@import "page/contacts/contacts";
+
 // Auth
 @import "page/auth/auth";
 @import "page/auth/signup";
 @import "page/auth/forgotpwd";
-
-// Libs
-@import "libs/flickity";
-@import "libs/jquery.formstyler";
-@import "libs/jquery.formstyler.theme";

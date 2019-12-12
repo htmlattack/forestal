@@ -1,7 +1,19 @@
 .news-container {
+  z-index: 3;
+  position: relative;
+
+  width: 100%;
+  margin-top: 100vh;
   padding: 140px 0 60px 0;
+
+  background-color: $white;
+
+  @media (min-height: 842px) {
+    margin-top: 842px;
+  }
   
   @media (max-width: $mobile) {
+    margin-top: 275px;
     padding-top: 32px;
   }
 
