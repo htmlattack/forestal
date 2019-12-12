@@ -6,6 +6,8 @@
   }
 
   &__in {
+	margin: 0 0 50px 0;
+
 	    .wrapper {
 	      display: flex;
 	      
@@ -303,7 +305,7 @@
 
 		&__info {
 			width: 100%;
-			max-width: 325px;
+			max-width: 285px;
 			margin-right: auto;
 			
 			@media (max-width: $mobile) {
@@ -321,7 +323,10 @@
 		}
 
 		&__button {
+			width: 50%;
 			padding: 0 40px 0 0;
+
+			box-sizing: border-box;
 			
 			@media (max-width: $mobile) {
 				padding: 0;
@@ -339,6 +344,49 @@
 					min-width: 160px;
 					height: 42px;
 					line-height: 42px;
+				}
+			}
+		}
+	}
+
+	&-spec {
+		width: 100%;
+		max-width: 1100px;
+		margin: 0 auto 50px auto;
+
+		table {
+			width: 100%;
+
+			th {
+				padding: 0 40px 40px 0;
+
+				box-sizing: border-box;
+
+				font-weight: bold;
+				font-size: 19px;
+				color: $black;
+				text-align: left;
+
+				&:first-child {
+					width: 25%;
+				}
+
+				&:last-child {
+					width: 50%;
+				}
+			}
+
+			td {
+				min-height: 94px;
+				border-bottom: 1px solid #e6e6e6;
+				padding: 40px 40px 17px 0;
+
+				font-size: 16px;
+				line-height: 130%;
+				color: $dark;
+
+				&:first-child {
+					font-size: 19px;
 				}
 			}
 		}

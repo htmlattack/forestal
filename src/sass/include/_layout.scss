@@ -250,6 +250,13 @@ svg.icon {
   }
 }
 
+.ico-added {
+  padding-right: 24px;
+
+  background: url(../images/icons/ico-added.png) right top no-repeat;
+  background-size: auto 15px
+}
+
 .hidden-xs {
   @media (max-width: $mobile) {
     display: none!important;

@@ -399,4 +399,11 @@ $(document).ready(function(){
     $('.footer-lang__select').on('click', function(e){
         e.stopPropagation();
     });
+
+
+
+    // Add to bag button
+    $('.js-addtobag').on('click', function(){
+        $(this).html('<span class="ico-added">Added</span>');
+    });
 });
