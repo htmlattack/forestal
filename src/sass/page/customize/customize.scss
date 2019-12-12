@@ -3,6 +3,7 @@
   
   @media (max-width: $mobile) {
   	padding-top: 24px;
+  	padding-bottom: 50px;
   }
 
   &__in {
@@ -356,6 +357,10 @@
 
 		table {
 			width: 100%;
+			
+			@media (max-width: $mobile) {
+				border-collapse: collapse;
+			}
 
 			th {
 				padding: 0 40px 40px 0;
@@ -366,6 +371,12 @@
 				font-size: 19px;
 				color: $black;
 				text-align: left;
+
+				@media (max-width: $mobile) {
+					font-size: 13px;
+					padding: 0 16px 0px 0;
+					vertical-align: top;
+				}
 
 				&:first-child {
 					width: 25%;
@@ -387,6 +398,27 @@
 
 				&:first-child {
 					font-size: 19px;
+					
+					@media (max-width: $mobile) {
+						font-size: 13px;
+					}
+				}
+
+				@media (max-width: $mobile) {
+					vertical-align: top;
+					font-size: 13px;
+					min-height: initial;
+					padding: 16px 16px 16px 0;
+				}
+			}
+
+			tr {
+				&:last-child {
+					td {
+						@media (max-width: $mobile) {
+							border-bottom: none;
+						}
+					}
 				}
 			}
 		}

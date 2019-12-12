@@ -12,13 +12,27 @@ $(document).ready(function(){
     var start_products = $('.start-products-slider');
 
     if(start_products.length) {
-        start_products.flickity({
-            autoPlay: 5000,
-            wrapAround: true,
-            pageDots: false,
-            prevNextButtons: false,
-        });
+        if ($(window).width() < 1024) {
+            start_products.flickity({
+                autoPlay: 5000,
+                wrapAround: true,
+                pageDots: false,
+                prevNextButtons: false,
+                pageDots: true
+            });
+        } else {
+            start_products.flickity({
+                autoPlay: 5000,
+                wrapAround: true,
+                pageDots: false,
+                prevNextButtons: false,
+            });
+        }
     }
+
+    var imgHeight = $('.start-products-slider__image').height();
+    
+    $('.flickity-page-dots').css('top', imgHeight);
 
     var start_news = $('.start-news__list');
 

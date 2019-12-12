@@ -254,7 +254,18 @@ svg.icon {
   padding-right: 24px;
 
   background: url(../images/icons/ico-added.png) right top no-repeat;
-  background-size: auto 15px
+  background-size: auto 15px;
+  
+  @media (max-width: $mobile) {
+    background: url(../images/icons/ico-added.png) right 10px no-repeat;
+    background-size: auto 15px;
+  }
+}
+
+.flickity-slider {
+  @media (max-width: $mobile) {
+    width: 75%!important;
+  }
 }
 
 .hidden-xs {

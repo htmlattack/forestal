@@ -32,6 +32,12 @@
           opacity: 1;
           transform: translate3d(0, 0px, 0);
         }
+
+        img {
+          @media (max-width: $mobile) {
+            opacity: 1;
+          }
+        }
       }
     }
 
@@ -43,6 +49,11 @@
 
         transition: all 500ms ease;
         transform: scale(0.75);
+        
+        @media (max-width: $mobile) {
+          transform: scale(0.5);
+          opacity: 0.5;
+        }
       }
     }
 
@@ -56,6 +67,7 @@
       @media (max-width: $mobile) {
         transform: none;
         margin-top: 0;
+        padding-top: 30px;
       }
     }
 
