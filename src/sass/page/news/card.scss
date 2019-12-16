@@ -107,6 +107,16 @@
       font-size: 23px;
       line-height: 110%;
       color: $black;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+
+      overflow: hidden;
+      text-overflow: ellipsis;
       
       @media (max-width: $mobile) {
         font-size: 13px;
@@ -122,6 +132,16 @@
       font-size: 14px;
       line-height: 140%;
       color: $black;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+
+      overflow: hidden;
+      text-overflow: ellipsis;
       
       @media (max-width: $mobile) {
         font-size: 12px;
