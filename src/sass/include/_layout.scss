@@ -73,8 +73,8 @@ svg.icon {
   box-sizing: border-box;
   
   @media (max-width: $mobile) {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
   }
 }
 

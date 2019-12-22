@@ -26,11 +26,13 @@
     &__sidebar {
         position: relative;
         width: 26%;
+        min-width: 215px;
         margin: 0 110px 0 0;
         border-right: 1px solid $green;
         
         @media (max-width: $mobile) {
             width: auto;
+            min-width: initial;
             
             margin: 0 -24px 32px -24px;
             border-right: none;

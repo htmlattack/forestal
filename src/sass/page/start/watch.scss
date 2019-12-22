@@ -28,6 +28,14 @@
     background-size: cover;
     border-radius: 30px;
     box-sizing: border-box;
+
+    text-decoration: none;
+
+    &:hover {
+      .btn-watch {
+        color: $white;
+      }
+    }
     
     @media (max-width: $mobile) {
       height: 146px;

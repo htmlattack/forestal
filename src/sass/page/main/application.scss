@@ -109,10 +109,10 @@
 	&__download {
 		&--ap {
 			a {
-				width: 139px;
-				height: 30px;
+				width: 156px;
+				height: 54px;
 
-				background: url(../images/icons/appstore-g.png) no-repeat;
+				background: url(../images/icons/appstore.png) no-repeat;
 				background-size: 100% auto;
 				
 				@media (max-width: $mobile) {
@@ -123,10 +123,10 @@
 
 		&--gp {
 			a {
-				width: 151px;
-				height: 30px;
+				width: 185px;
+				height: 54px;
 
-				background: url(../images/icons/googleplay-g.png) 0 3px no-repeat;
+				background: url(../images/icons/googleplay.png) no-repeat;
 				background-size: 100% auto;
 				
 				@media (max-width: $mobile) {
