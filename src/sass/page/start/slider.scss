@@ -1,6 +1,14 @@
 .start-products {
   overflow: hidden;
 
+  .wrapper {
+    min-height: 786px;
+
+    @media(max-width: $mobile) {
+      min-height: 380px;
+    }
+  }
+
   &-slider {
     $this: &;
 

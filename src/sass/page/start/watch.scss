@@ -7,7 +7,7 @@
 
   &__list {
     @media (max-width: $mobile) {
-      padding-right: 30px;
+      padding-right: 0px;
     }
   }
 
@@ -28,9 +28,17 @@
     background-size: cover;
     border-radius: 30px;
     box-sizing: border-box;
+
+    text-decoration: none;
+
+    &:hover {
+      .btn-watch {
+        color: $white;
+      }
+    }
     
     @media (max-width: $mobile) {
-      height: 146px;
+      height: 176px;
       padding-left: 18px;
     }
 
@@ -43,7 +51,7 @@
       bottom: 0;
       left: 0;
 
-      background-color: rgba($black, 0.3);
+      background-color: rgba($black, 0.4);
     }
 
     h2 {
@@ -59,10 +67,6 @@
       
       @media (max-width: $mobile) {
         font-size: 23px;
-        
-        br {
-          display: none;
-        }
       }
     }
 

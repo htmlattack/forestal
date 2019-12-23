@@ -15,14 +15,17 @@
     overflow: hidden;
     display: block;
 
-    border: 1px solid #e3e3e3;
-
     border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 4px 14px rgba($black, 0.05);
 
     text-decoration: none;
 
+    backface-visibility: hidden;
+    transition: all 0.4s;
+
     &:hover {
+      border-radius: 0px;
       #{$this}__image {
         img {
           transform: scale(1.15);
@@ -50,6 +53,17 @@
   }
 
   &__image {
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+
+    backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    transition: all 0.4s;
+
+    &:hover {
+      border-radius: 0px 0px 0 0;
+    }
+
     @media (max-width: $mobile) {
       height: 360px;
     }
@@ -59,7 +73,10 @@
       width: 100%;
       height: auto;
 
+      border-radius: 20px 20px 0 0;
+
       transition: transform 450ms ease-in-out;
+      transform: translate3d(0,0,0);
       
       @media (max-width: $mobile) {
         height: 100%;

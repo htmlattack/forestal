@@ -10,12 +10,13 @@
 
     height: 54px;
     border: 0;
-    padding: 0 25px;
+    padding: 2px 25px 0 25px;
 
     // border-radius: 21px;
     -webkit-border-radius: 14px;
             border-radius: 14px;
     background-color: $green;
+    box-sizing: border-box;
 
     font-weight: bold;
     font-size: 14px;
