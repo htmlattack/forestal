@@ -1,5 +1,5 @@
 <div class="checkout">
-  <button class="btn btn-back visible-xs">
+  <button class="btn btn-back">
     <span>Back</span>
   </button>
   
@@ -12,7 +12,7 @@
     <div class="checkout-form-row">
       <h4>Delivery address:</h4>
 
-      <div class="inp-group">
+      <div class="inp-group inp-error">
         <label for="chk-rec">Recipient</label>
         <input type="text" name="#" class="inp-style inp-fw" id="chk-rec">
       </div>
@@ -48,7 +48,7 @@
     <div class="checkout-form-row">
       <h4>Invoice address:</h4>
 
-      <div class="inp-group">
+      <div class="inp-group inp-error">
         <select name="#" class="inp-decorate inp-fw">
           <option>Same as delivery address</option>
           <option>Same as delivery address 2</option>
@@ -110,9 +110,6 @@
   </div>
   
   <div class="checkout-controls">
-    <button class="btn btn-back">
-      <span>Back</span>
-    </button>
     <button class="btn btn-green">Save</button>
   </div>
 </div>

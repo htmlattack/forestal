@@ -414,27 +414,49 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 
-
-
     // Add to bag button
     $('.js-addtobag').on('click', function(){
         $(this).html('<span class="ico-added">Added</span>');
     });
 
-
     // Navbox scrollTo
-    $('.navbox a').on('click', function(e){
-        e.preventDefault();
+    var offset = $('.header').height() - 5;
 
-	    var target = this.hash;
-        var $target = $(target);
-        var offset = $('.header').height();
+    $('.navbox a').on('click', function (event) {
+        event.preventDefault();
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top - offset
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - offset
+        }, 500);
     });
+
+    // Play video
+    $('.btn-watch').on('click', function () {
+        var video = $(this).closest('.video__block').find('video');
+        var videoWrapper = $(this).closest('.video__block');
+
+        video.trigger('play');
+        videoWrapper.addClass('is-active');
+
+        video.bind("ended", function() {
+            videoWrapper.removeClass('is-active');
+        });
+    });
+
+    // Email validation
+    // $('input[type="email"]').on('keyup', function () {
+    //     var $this = $(this);
+    //
+    //     $this.val($this.val().replace(/[^a-zA-Z0-9]/g, function () {
+    //         return '';
+    //     }));
+    // });
+
+    if ($('.customize-photo').length) {
+        $('.customize-photo').pin({
+            containerSelector: '.wrapper',
+            padding: {top: 80, left: 0},
+            minWidth: 768,
+        });
+    }
 });

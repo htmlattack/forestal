@@ -118,8 +118,12 @@
     margin: 0 0 32px 0;
 
     box-sizing: border-box;
-    border-radius: 16px;
-    box-shadow: 0px 7.61307px 12.1809px rgba($black, 0.0433785);
+
+    @media (max-width: $mobile) {
+      max-width: 100%;
+      margin: 50px 0 0 0;
+      padding: 0 40px;
+    }
 
     h4 {
       margin: 0 0 10px 0;
@@ -133,6 +137,8 @@
     &__form {
       position: relative;
       padding: 0 75px 0 0;
+      box-shadow: 0 7.61px 12.18px rgba(0,0,0,.0433785);
+      border-radius: 16px;
     }
 
     &__input {
@@ -176,7 +182,7 @@
       -webkit-flex-direction: column-reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse;
-        padding: 50px 0 50px 0;
+        padding: 32px 0 50px 0;
         border-top: none;
     }
   }
